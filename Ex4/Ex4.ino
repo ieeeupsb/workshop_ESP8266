@@ -24,7 +24,6 @@ void setup(){
 
   pinMode(BUILT_IN_LED, OUTPUT);
 
-	// Wait for connection
 	while(WiFi.status() != WL_CONNECTED){
 		delay(500);
 		Serial.print(".");
