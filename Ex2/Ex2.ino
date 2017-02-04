@@ -40,10 +40,10 @@ void loop() {
 
   // Imprime a humidade, temperatura e indice de calor.
   Serial.print("Humidity: ");
-  Serial.print(h);
+  Serial.print(humidity);
   Serial.print(" %\t");
   Serial.print("Temperature: ");
-  Serial.print(t);
+  Serial.print(temperature);
   Serial.print(" *C\t");
   Serial.print("Heat index: ");
   Serial.print(hic);
