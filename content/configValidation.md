@@ -8,7 +8,7 @@ Now, still in the 'Tools' menu go to 'Board', scroll down and select 'NodeMCU 0.
 
 Now the fun part: CODE!!!!
 
-<code>
+```c++
 #define BUILT_IN_LED 2
 
 void setup(){
@@ -26,4 +26,7 @@ void loop(){
   digitalWrite(BUILT_IN_LED, HIGH);  // Desliga-se o LED ao aplicar a diferença de potêncial correspondente ao nível lógico HIGH (3.3V)
   delay(2000);                      // Esperam-se dois segundos
 }
-</code>
+```
+
+If you see the board's LED blinking, you're all good.
+If not, ask for assistance from one of the IEEE members.
