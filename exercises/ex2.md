@@ -55,7 +55,9 @@ server.on("/", [](){
 ```
 
 <code>server.on()</code> is used to create a webpage on the 'server' object.
+
 The first argument ("/") sets the path to that page. In this case, root.
+
 The second is a function. That means you can do stuff like this:
 
 ```c++
@@ -63,11 +65,15 @@ server.on("/coolstuff.html", serveWebpage);
 ```
 
 The only thing the function REQUIRES is a <code>server.send()</code> function call.
+
 This functions first argument is the [HTTP response code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) to send when a client connects to the webpage.
+
 The second is the type of content in the page:
  * text/plain
  * text/html
  * application/json
  * etc.
+
 The last is a String with all the text and/or code for the webpage.
+
 Think of this function as the <code>return</code> call in a normal function.
