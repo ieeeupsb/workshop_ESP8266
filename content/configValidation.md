@@ -12,19 +12,19 @@ Now the fun part: CODE!!!!
 #define BUILT_IN_LED 2
 
 void setup(){
-  // Este código corre apenas uma vez, quando a placa é inicializada.
-  pinMode(BUILT_IN_LED, OUTPUT);     // Inicialização do pin ligado ao LED da placa como um output
+  // Code within these brackets will run only once, at board startup.
+  pinMode(BUILT_IN_LED, OUTPUT);    // Initialize the GPIO pin 2 to be an Output
 }
 
 
 void loop(){
-  // Este código corre repetidamente até a energia ser cortada à placa.
+  // The code inside these brackets will run forever until the power is unplugged from the board.
   
-  digitalWrite(BUILT_IN_LED, LOW);   // Liga-se o LED (Sim, os pinos no ESP8266 ficam activos quando ligados à massa)
+  digitalWrite(BUILT_IN_LED, LOW);  // Turn on the LED (It's a active-low pin)
   
-  delay(1000);                      // Espera-se um segundo
-  digitalWrite(BUILT_IN_LED, HIGH);  // Desliga-se o LED ao aplicar a diferença de potêncial correspondente ao nível lógico HIGH (3.3V)
-  delay(2000);                      // Esperam-se dois segundos
+  delay(1000);                      // Wait 1 second before proceding to the next command.
+  digitalWrite(BUILT_IN_LED, HIGH); // Turn off the LED
+  delay(2000);                      // Wait 2 seconds before proceding to the next command.
 }
 ```
 
