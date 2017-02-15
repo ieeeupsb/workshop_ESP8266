@@ -23,27 +23,27 @@ ESP8266WebServer server(80);					// Create a server on port 80
 Now fill the <code>setup()</code> routine with this code.
 
 ```c++
-Serial.begin(115200);															// Initialize the serial bus with a 115200 baud rate. This will allow us to send data back to the computer through the USB cable
-WiFi.begin(ssid, password);												// Connect to the WiFi network set in the code above.
+Serial.begin(115200);                             // Initialize the serial bus with a 115200 baud rate. This will allow us to send data back to the computer through the USB cable
+WiFi.begin(ssid, password);                       // Connect to the WiFi network set in the code above.
 Serial.println("");
 
-while (WiFi.status() != WL_CONNECTED){						// Wait for the connection to be established.
+while (WiFi.status() != WL_CONNECTED){            // Wait for the connection to be established.
   delay(500);
-  Serial.print(".");															// Send a '.' through the serial bus while we wait.
+  Serial.print(".");                              // Send a '.' through the serial bus while we wait.
 }
 
-Serial.println("");																// Send a '\n'
-Serial.print("Connected to ");										// 
-Serial.println(ssid);															// Print the network the board connected to 
-Serial.print("IP address: ");											//
-Serial.println(WiFi.localIP());										// and the IP address it recieved from the DHCP server
+Serial.println("");                               // Send a '\n'
+Serial.print("Connected to ");                    // 
+Serial.println(ssid);                             // Print the network the board connected to 
+Serial.print("IP address: ");                     //
+Serial.println(WiFi.localIP());                   // and the IP address it recieved from the DHCP server
 
-server.on("/", [](){															// Create a webpage for the server
-  server.send(200, "text/plain", "hello world");	//
-});																								//
+server.on("/", [](){                              // Create a webpage for the server
+  server.send(200, "text/plain", "hello world");  //
+});                                               //
 
-server.begin();																		// Start the server
-Serial.println("HTTP server started");						// Signal that to the PC
+server.begin();                                   // Start the server
+Serial.println("HTTP server started");            // Signal that to the PC
 ```
 
 Let's pay a little bit more attention to the webpage creation code.
