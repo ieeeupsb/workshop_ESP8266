@@ -11,6 +11,7 @@ Add these at the top of the file.
 
 Still before the <code>void setup()</code> routine we will need to create a object of the ESP8266WebServer class.
 If you don't know what classes are, don't worry. Just think of them as C structs where you can also add functions and not only variables.
+
 We will also need a way to store our WiFi credentials.
 
 ```c++
