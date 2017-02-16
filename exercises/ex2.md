@@ -1,4 +1,4 @@
-# Displaying data in a webpage
+# The Basics - Displaying data in a webpage
 
 Create a new arduino sketch. For this example we will need a few libraries.
 Add these at the top of the file.
