@@ -20,4 +20,4 @@ As simple as that.
 
 > Try writting a simple sketch that saves the WiFi credentials into the EEPROM, so you won't have to upload hardcoded credentials in your projects.
 
-[Return to exercises](./..)
+[Return to exercises](./)
