@@ -78,3 +78,5 @@ The second is the type of content in the page:
 The last is a String with all the text and/or code for the webpage.
 
 Think of this function as the <code>return</code> call in a normal function.
+
+In <code>void loop()</code> just add <code>server.handleClient()</code>.
