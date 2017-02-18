@@ -55,4 +55,4 @@ This code is fine if you live on a area where WiFi networks are scarce. The prob
 
 To select the channel of the AP, use: <code>WiFi.softAP(ssid, pass, channelNbr);</code>
 
-[Return to exercises](./)
+[Return to Exercises](./)
