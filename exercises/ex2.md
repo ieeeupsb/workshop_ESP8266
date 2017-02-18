@@ -65,6 +65,19 @@ The second is a function. That means you can do stuff like this:
 server.on("/coolstuff.html", serveWebpage);	
 ```
 
+This funtion runs when you access the webpage, therefore if you want to, you can put a <code>digitalWrite()</code> function call here so that when you access the page it turn a pin ON or OFF.
+Example:
+```c++
+server.on("/on", [](){
+  digitalWrite(ledPin, LOW); //active low
+  server.send(200, "text/plain", "LED ON");
+});
+server.on("/off", [](){
+  digitalWrite(ledPin, HIGH); //active low
+  server.send(200, "text/plain", "LED OFF");
+});
+```
+
 The only thing the function REQUIRES is a <code>server.send()</code> function call.
 
 This functions first argument is the [HTTP response code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) to send when a client connects to the webpage.
