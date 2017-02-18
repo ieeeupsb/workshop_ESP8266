@@ -79,7 +79,7 @@ The last is a String with all the text and/or code for the webpage.
 
 Think of this function as the <code>return</code> call in a normal function.
 
-In <code>void loop()</code> just add <code>server.handleClient()</code>.
+In <code>void loop()</code> just add <code>server.handleClient()</code>. This line of code will make plenty of things, for example, it will reconnect upon lost connection.
 
 When you run this code and access the IP address printed to the Serial Monitor, you should see a page saying "Hello World".
 If you see that: Well done!
