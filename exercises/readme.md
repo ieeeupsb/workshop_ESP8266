@@ -3,7 +3,7 @@
 ## The basics
  1. Getting readings from a fotoresistor
  2. [Displaying data in a webpage](./ex2.md)
- 3. [](./)
+ 3. [Recieving commands through HTTP GET and HTTP POST](./ex3.md)
 
 ## Quality of life
  4. [Static IP and mDNS](./ex4.md)
@@ -12,4 +12,5 @@
 
 ## Advanced-ish stuff
  7. [MQTT and AdafruitIO](./)
- 8. [OTA updates](./)
+ 8. [Blynk App](./ex8.md)
+ 9. [OTA updates](./)

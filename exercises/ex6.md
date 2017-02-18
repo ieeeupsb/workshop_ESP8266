@@ -7,7 +7,7 @@ The ESP has the ability to create Captive Portals. Simple ones and ones that you
 
 Let's get to it.
 
-
+### Creating an AP
 
 The code below is the base from which we will build our Captive Portal. It creates a AP. There are few differences from the code used to connect to a AP.
 
@@ -54,5 +54,34 @@ This code is fine if you live on a area where WiFi networks are scarce. The prob
 (If you do not know what WiFi channels are, just know that if you have multiple networks on the same channel they cause interfetrence with each other).
 
 To select the channel of the AP, use: <code>WiFi.softAP(ssid, pass, channelNbr);</code>
+
+> If you are doing this in the workshop ask for the channel to use so you don't get a interference.
+
+### Adding a Captive Portal
+
+Incluir a biblioteca: <code>#include <DNSServer.h></code>
+
+Adicionar globalmente:
+```c++
+#define DNS_PORT 53
+DNSServer dnsServer;
+```
+
+Colocar no <code> void setup()</code>:
+
+```c++
+void setup(){
+  ...
+  dnsServer.start(DNS_PORT, "*", myIP); //Redirects traffic going to "*" ('*' means everything) to the IP of your device ('myIP' in the AP example code).
+}
+
+void loop(){
+  ...
+  dnsServer.processNextRequest();
+  ...
+}
+```
+
+That should do the trick.
 
 [Return to exercises](./)
