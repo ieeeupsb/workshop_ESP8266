@@ -59,7 +59,7 @@ To select the channel of the AP, use: <code>WiFi.softAP(ssid, pass, channelNbr);
 
 ### Adding a Captive Portal
 
-Add this library: <code>#include <DNSServer.h></code>
+Add this library: <code>DNSServer.h</code>
 
 Add at the global scope:
 ```c++
