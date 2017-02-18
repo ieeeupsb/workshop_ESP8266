@@ -1,4 +1,4 @@
-# Advanced-ish - Blynk App
+# Exercise 6
 
 To much times we are in our bed and the switch to turn on/off the lights is sooo far away. What if we could control the lights with an app in our phone? With Blynk and an ESP8266, it’s so easy. In this tutorial you will learn how to control a LED which simulates your lights.
 
@@ -17,7 +17,7 @@ https://play.google.com/store/apps/details?id=cc.blynk
 
 Then, create an account.
 
-Install the Blynk library. You can download it at https://github.com/blynkkk/blynk-library/releases/tag/v0.4.4. Download the <code>.zip</code> file in the end of the page. To install the library, in your Arduino IDE go to <code>Sketch -> Include library -> Add .zip</code> library and then give the path to your just downloaded library.
+Install the Blynk library. You can download it at https://github.com/blynkkk/blynk-library/releases/tag/v0.4.4. Download the <code>.zip</code> file in the end of the page. To install the library, in your Arduino IDE go to <code>Sketch -> Include library -> Add .zip library</code> and then give the path to your just downloaded library.
 
 Now, with all things configured, it’s time to get things done. Open the Blynk app and start a new project. Select **NodeMCU** as the hardware and **WiFi** as your connection type. Now select the plus at the top right corner. Select a button, and then click on it. In the button settings, select the pin you want to control. You can select if the logical level is HIGH when the button is pressed (as it is predefined) or LOW. For now we will just select the pin we wan't to control. It’s all done in the app, let’s start to coding our dev board.
 
