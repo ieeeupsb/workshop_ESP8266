@@ -1,4 +1,4 @@
-# Exercise 6
+# Advanced-ish - Blynk App
 
 To much times we are in our bed and the switch to turn on/off the lights is sooo far away. What if we could control the lights with an app in our phone? With Blynk and an ESP8266, it’s so easy. In this tutorial you will learn how to control a LED which simulates your lights.
 
