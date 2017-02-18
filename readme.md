@@ -1,7 +1,7 @@
 # ESP8266/nodeMCU Workshop
 Welcome!
 
-# Introduction
+## Introduction
  1. [Setting Up](./content/setup.md)
  2. [Introduction](./content/introduction.md)
  3. [Programming a microcontroller](./content/microcontroller.md)
