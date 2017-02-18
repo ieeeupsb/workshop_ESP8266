@@ -31,4 +31,4 @@ void loop(){
 If you see the board's LED blinking, you're all good.
 If not, ask for assistance from one of the IEEE members.
 
-### [Go Back](../readme.md)
+### [Go Back](./)
