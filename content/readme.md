@@ -1,7 +1,11 @@
 # Exercises
 
+## Introduction
+ 1. [Setup](./setup.md)
+ 1. [Programming a Microcontroller](./microcontroller.md)
+
 ## The basics
- 1. Getting readings from a fotoresistor
+ 1. [Getting readings from a fotoresistor](./ex1.md)
  2. [Displaying data in a webpage](./ex2.md)
  3. [Recieving commands through HTTP GET and HTTP POST](./ex3.md)
 
