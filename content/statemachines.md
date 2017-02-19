@@ -1,4 +1,4 @@
-# Introduction
+# Introduction - State Machines
 
 Like any other kind of programming the best way is to cut down to pen and paper and design your idea before facing the IDE that can be distractive when you need to code a slighly complex function.
 
