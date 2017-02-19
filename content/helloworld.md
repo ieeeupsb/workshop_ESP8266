@@ -43,6 +43,6 @@ This instruction handles the D0 pin value. Why digital? Because as the name sugg
 
 Finally to make the blinking noticeable we've introduced a delay to make the code wait.
 
-Now you're ready to get into the cool stuff!
+Don't disconnect the LED just yet! Now you're ready to get into the cool stuff!
 
 [Next](./ex1.md)
