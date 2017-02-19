@@ -14,11 +14,11 @@ Welcome!
  4. [Recieving commands through HTTP GET and HTTP POST](./content/ex3.md)
 
 ## Quality of Life
- 4. [Static IP and mDNS](./content/ex4.md)
- 5. [EEPROM](./content/ex5.md)
- 6. [AP mode and Captive portals](./content/ex6.md)
+ 1. [Static IP and mDNS](./content/ex4.md)
+ 2. [EEPROM](./content/ex5.md)
+ 3. [AP mode and Captive portals](./content/ex6.md)
 
 ## Advanced-ish Stuff
- 7. [MQTT and AdafruitIO](./content/)
- 8. [Blynk App](./content/ex8.md)
- 9. [OTA updates](./content/)
+ 1. [MQTT and AdafruitIO](./content/)
+ 2. [Blynk App](./content/ex8.md)
+ 3. [OTA updates](./content/)
