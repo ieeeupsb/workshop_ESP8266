@@ -20,6 +20,8 @@ Now go to Tools -> Board -> Boards Manager and search for ESP8266
 
 ![Arduino Add Board](../content/images/arduino3.png)
 
-Then restart the Arduino IDE and you're ready to go!
+If you are using linux, make sure to add your user to the 'dialout' group or you won't be able to upload code.
+
+Then restart Arduino IDE and you're ready to go!
 
 [Next](../content/introduction.md)

@@ -3,7 +3,7 @@ Welcome!
 
 ## Introduction
  1. [Setting Up](./content/setup.md)
- 2. [Introduction](./content/introduction.md)
+ 2. [State Machines](./content/statemachines.md)
  3. [Programming a microcontroller](./content/microcontroller.md)
 
 ## The basics
