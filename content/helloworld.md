@@ -8,7 +8,7 @@ All we have to do is to connect the longer (positive) pin of the LED to a logic 
 
 Next you have to program it!
 
-```arduino
+```c++
 void setup() {
   pinMode(LED_BUILTIN, OUTPUT);
 }
