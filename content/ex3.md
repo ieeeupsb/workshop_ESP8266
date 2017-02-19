@@ -41,4 +41,4 @@ To force a page to only recieve requests of a certain type use:
 
 <code>server.on("/setpos", HTTP_POST, [](){});</code>
 
-[Return to exercises](./)
+[Back](../)
