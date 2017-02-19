@@ -6,6 +6,19 @@ All we have to do is to connect the longer (positive) pin of the LED to a logic 
 
 ![Hello World](./images/helloworld.png)
 
-WIP
+Next you have to program it!
+
+```arduino
+void setup() {
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(1000);
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(1000);
+}
+```
 
 [Next](./ex1.md)
