@@ -1,4 +1,4 @@
-# Introduction
+# Introduction - Programming a microcontroller
 
 And for those of you that are not confortable with microcontrollers such as this one, Arduino or similar, maybe we should start with the bare basics.
 
@@ -16,4 +16,6 @@ void loop(){
 
 The code inside the <code>void setup()</code> routine will only run once when the microcontroller boots. So it will consist in pin initializations (identifying outputs and inputs), connecting to WiFi, along with other initializations.
 
-On the other hand any code inside <code>void loop()</code> will run repeatedly forever. You can think of it as an uncondicional loop (<code>while(true)</code>) that is commonly used to update readings from sensors, and calculate new outputs.
+On the other hand ```void loop()``` is code that will run repeatly, you can think it as an uncondicional loop ( ```while(true)``` ) that is commonly used to update reading from sensors, and calculate new outputs.
+
+[Next](./ex1.md)
