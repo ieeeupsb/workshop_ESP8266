@@ -20,5 +20,3 @@ Welcome!
  7. [MQTT and AdafruitIO](./)
  8. [Blynk App](./ex8.md)
  9. [OTA updates](./)
-
-## [Go Back](../readme.md)
