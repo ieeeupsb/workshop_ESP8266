@@ -27,19 +27,19 @@ void loop() {
 
 Let's go through what is happening here.
 
-## <code>void setup()</code>
+## ```void setup()```
 
-### <code>pinMode(PIN_IDENTIFICATION, OUTPUT/INPUT)</code>
+### ```pinMode(PIN_IDENTIFICATION, OUTPUT/INPUT)```
 
 We've initialized the D0 pin as being an output pin since it will be used to send data rather than receiving it.
 
-## <code>void loop()</code>
+## ```void loop()```
 
-### <code>digitalWrite(PIN_IDENTIFICATION, VALUE)</code>
+### ```digitalWrite(PIN_IDENTIFICATION, VALUE)```
 
 This instruction handles the D0 pin value. Why digital? Because as the name suggests D0 is a digital pin (which means it can only handle HIGH and LOW states, 1 or 0)
 
-### <code>delay(TIME_IN_MILISECONDS)</code>
+### ```delay(TIME_IN_MILISECONDS)```
 
 Finally to make the blinking noticeable we've introduced a delay to make the code wait.
 
