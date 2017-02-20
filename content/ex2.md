@@ -24,6 +24,7 @@ ESP8266WebServer server(80);					// Create a server on port 80
 Now fill the <code>setup()</code> routine with this code.
 
 ```c++
+pinMode(D0, OUTPUT);
 Serial.begin(115200);                             // Initialize the serial bus with a 115200 baud rate. This will allow us to send data back to the computer through the USB cable
 WiFi.begin(ssid, password);                       // Connect to the WiFi network set in the code above.
 Serial.println("");
