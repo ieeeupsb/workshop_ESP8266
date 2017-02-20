@@ -27,19 +27,19 @@ For those new to electronics and circuits, breadboards are often the best place 
 
 ## Jumper cables
 
-![Jumper cables](./images/JumperCables.jpg)
-
 A jumper cable, also known as jumper, is an electrical wire or group of them in a cable with a connector or pin at each end, which is normally used to interconnect the components of a breadboard or other prototype or test circuit, internally or with other equipment or components, without soldering.
 
 Individual jump wires are fitted by inserting their "end connectors" into the slots provided in a breadboard, the header connector of a circuit board, or a piece of test equipment.
 
-## Resistor
+![Jumper cables](./images/JumperCables.jpg)
 
-![Resistor](./images/Resistor.jpg)
+## Resistor
 
 ### What is a resistor?
 
 Resistors are electronic components which have a specific, never-changing electrical resistance. The resistor’s resistance limits the flow of electrons through a circuit. They are passive components, meaning they only consume power (and can’t generate it). Resistors are usually added to circuits where they complement active components like op-amps, microcontrollers, and other integrated circuits. Commonly resistors are used to limit current, divide voltages, and pull-up I/O lines.
+
+![Resistor](./images/Resistor.jpg)
 
 ### The Ω
 
@@ -48,8 +48,6 @@ The electrical resistance of a resistor is measured in ohms. The symbol for an o
 As SI units go, larger or smaller values of ohms can be matched with a prefix like kilo-, mega-, or giga-, to make large values easier to read. It’s very common to see resistors in the kilohm (kΩ) and megaohm (MΩ) range (much less common to see miliohm (mΩ) resistors). For example, a 4,700Ω resistor is equivalent to a 4.7kΩ resistor, and a 5,600,000Ω resistor can be written as 5,600kΩ or 5.6MΩ.
 
 ## Photoresistor
-
-![Photoresistor](./images/Photoresistor.jpg)
 
 ### What is a photoresistor?
 
@@ -61,3 +59,7 @@ It is not uncommon for the values of resistance of an LDR or photoresistor to be
 
 LDRs are made from semiconductor materials to enable them to have their light sensitive properties. Many materials can be used, but one popular material for these photoresistors is cadmium sulphide, CdS.
 
+![Photoresistor](./images/Photoresistor.jpg)
+
+
+[Main Menu](../readme.md) | [Next](./helloworld.md)
