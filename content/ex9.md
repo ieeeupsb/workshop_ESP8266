@@ -23,4 +23,6 @@
   
 ## Bottom line
   While some of these projects are not yet free of bugs, some just exist for the sake of it, it's nice to break from the cycle of coding, compiling, flashing, and so on typical of micro systems programming. For small projects, something like MicroPython is utterly enjoyable. Experiment, there are plenty of things to work with and if you are a software developer or just trying to do some hacks, not having to go under the hood with something like C or Assembly can be definitely a painkiller. 
+
+
 [Main Menu](../readme.md)
