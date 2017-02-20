@@ -13,7 +13,7 @@ During this workshop we'll be using the following material:
 ### How do breadboards work? 
 Breadboards are one of the most fundamental pieces when learning how to build circuits. In this tutorial, you will learn a little bit about what breadboards are and how to use one.
 
-![Breadboard](https://github.com/nuieee/ESP8266-Workshop-Exercises/blob/ws_v2/content/images/Breadboard.jpg)
+![Breadboard](./images/Breadboard.jpg)
 
 ### Why use breadboards?
 
@@ -23,11 +23,11 @@ Prototyping is the process of testing out an idea by creating a preliminary mode
 
 For those new to electronics and circuits, breadboards are often the best place to start. That is the real beauty of breadboards – they can house both the simplest circuit as well as very complex circuits.
 
-![Breadboard](https://github.com/nuieee/ESP8266-Workshop-Exercises/blob/ws_v2/content/images/Breadboard1.png)
+![Breadboard](./images/Breadboard1.png)
 
 ## Jumper cables
 
-![Jumper cables](https://github.com/nuieee/ESP8266-Workshop-Exercises/blob/ws_v2/content/images/JumperCables.jpg)
+![Jumper cables](./images/JumperCables.jpg)
 
 A jumper cable, also known as jumper, is an electrical wire or group of them in a cable with a connector or pin at each end, which is normally used to interconnect the components of a breadboard or other prototype or test circuit, internally or with other equipment or components, without soldering.
 
@@ -35,7 +35,7 @@ Individual jump wires are fitted by inserting their "end connectors" into the sl
 
 ## Resistor
 
-![Resistor](https://github.com/nuieee/ESP8266-Workshop-Exercises/blob/ws_v2/content/images/Resistor.jpg)
+![Resistor](./images/Resistor.jpg)
 
 ### What is a resistor?
 
@@ -49,7 +49,7 @@ As SI units go, larger or smaller values of ohms can be matched with a prefix li
 
 ## Photoresistor
 
-![Photoresistor](https://github.com/nuieee/ESP8266-Workshop-Exercises/blob/ws_v2/content/images/Photoresistor.jpg)
+![Photoresistor](./images/Photoresistor.jpg)
 
 ### What is a photoresistor?
 
@@ -60,3 +60,4 @@ In view of their low cost, ease of manufacture, and ease of use, LDRs have been 
 It is not uncommon for the values of resistance of an LDR or photoresistor to be several megohms in darkness and then to fall to a few hundred ohms in bright light. With such a wide variation in resistance, LDRs are easy to use and there are many LDR circuits available. The sensitivity of light dependent resistors or photoresistors also varies with the wavelength of the incident light.
 
 LDRs are made from semiconductor materials to enable them to have their light sensitive properties. Many materials can be used, but one popular material for these photoresistors is cadmium sulphide, CdS.
+
