@@ -1,7 +1,7 @@
 # Advanced-ish - Interpreting the bits
 
 ## Life's short, no time for compiling
-  In embedded systems programming, specially in the makers ecosystem, it's frequent to make small changes in the program, as you experiment new things and correct old bugs. Every time we change a piece of code, the compiling process takes some time. Whilst not much, deploying and having your code run right after it, as it's ( and dis)advantages. The ESP8266 supports multiple interpreters, such as BASIC, the language that got Microsoft rolling and that was part of the computer revolution. You will learn how to set up interpreters in various languages.
+  In embedded systems programming, specially in the makers ecosystem, it's frequent to make small changes in the program, as you experiment new things and correct old bugs. Every time we change a piece of code, the compiling process takes some time. Whilst not much, deploying and having your code run right after it, as it's ( and dis)advantages. The ESP8266 supports multiple interpreters, such as BASIC, the language that got Microsoft rolling and that was part of the computer revolution.
   
 ### The grandfather
    There's not much to say about BASIC, it's one of the most widespread languages and if you know a programmer with more than 40 years old, chances are it was his first programming language.
