@@ -6,8 +6,7 @@ Ever heard of photoresistors? You have one with you. It simply is a resistor whi
 
 ![Photoresistor](./images/photoresistor.png)
 
-We'll keep the code from the previous exercise and will add a feature to turn on and off the LED based on current brightness.
-
+We'll keep the code from the previous exercise and will add a feature to turn on and off the LED based on current brightness. Keep in mind that in this example we've used a 10k Ω resistor.
 ```c++
 void setup() {
   Serial.begin(115200);
