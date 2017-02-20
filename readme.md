@@ -1,5 +1,5 @@
 # ESP8266/nodeMCU Workshop
-Welcome!
+Welcome! Here you can find guided exercises so you can learn as you go. If if find any typo or error you are more than welcome to create a pull request.
 
 ## Introduction
  1. [Setting Up](./content/setup.md)
