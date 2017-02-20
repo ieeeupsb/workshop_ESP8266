@@ -24,4 +24,4 @@ If you are using linux, make sure to add your user to the 'dialout' group or you
 
 Then restart Arduino IDE and you're ready to go!
 
-[Next](../content/statemachines.md)
+[Main Menu](../readme.md) | [Next](../content/statemachines.md)

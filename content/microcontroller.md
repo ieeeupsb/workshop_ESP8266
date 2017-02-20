@@ -18,4 +18,4 @@ The code inside the <code>void setup()</code> routine will only run once when th
 
 On the other hand ```void loop()``` is code that will run repeatly, you can think it as an uncondicional loop ( ```while(true)``` ) that is commonly used to update reading from sensors (inputs), and calculate new outputs.
 
-[Next](./hiesp.md)
+[Main Menu](../readme.md) | [Next](./hiesp.md)

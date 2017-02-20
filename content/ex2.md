@@ -98,4 +98,4 @@ When you run this code and access the IP address printed to the Serial Monitor, 
 If you see that: Well done!
 If you don't, call for help.
 
-[Next](./ex3.md)
+[Main Menu](../readme.md) | [Next](./ex3.md)

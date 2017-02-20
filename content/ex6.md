@@ -84,4 +84,4 @@ void loop(){
 
 That should do the trick.
 
-[Next](./ex7.md)
+[Main Menu](../readme.md) | [Next](./ex7.md)
