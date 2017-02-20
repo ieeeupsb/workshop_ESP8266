@@ -2,7 +2,7 @@
 
 Now that you know how to program pins, instead of sending data, lets obtain it from a sensor and learn how to use the Serial Monitor!
 
-Ever heard of photoresistors? You have one with you. It simply is a resistor which its value varies according to exposed light. So you can read how much brightness there is and can be useful to manage other components such as turn of and on the LED, and that is what we'll do.
+Now we we'll get our hands on a photoresistor. It simply is a resistor which its value varies according to exposed light. So you can read how much brightness there is and can be useful to manage other components such as turn off and on the LED, and that is what we'll do.
 
 ![Photoresistor](./images/photoresistor.png)
 
