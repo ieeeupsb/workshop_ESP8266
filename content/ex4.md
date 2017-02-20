@@ -53,4 +53,4 @@ To then access your board, you just have to type <code>myVeryOwnESP8266.local</c
 
 If you want to learn more about this, like how to find all the ESPs on the network, look at the library documentation [here](https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266mDNS).
 
-[Next](./ex5.md)
+[Main Menu](../readme.md) | [Next](./ex5.md)

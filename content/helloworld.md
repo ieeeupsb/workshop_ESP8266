@@ -45,4 +45,4 @@ Finally to make the blinking noticeable we've introduced a delay to make the cod
 
 Don't disconnect the LED just yet! Now you're ready to get into the cool stuff!
 
-[Next](./ex1.md)
+[Main Menu](../readme.md) | [Next](./ex1.md)

@@ -41,4 +41,4 @@ To force a page to only recieve requests of a certain type use:
 
 <code>server.on("/setpos", HTTP_POST, [](){});</code>
 
-[Next](./ex4.md)
+[Main Menu](../readme.md) | [Next](./ex4.md)

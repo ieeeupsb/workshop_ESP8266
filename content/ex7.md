@@ -27,4 +27,4 @@ After that, add a few lines of code to make the LED blink and try uploading over
 
 You now have a few hours of fun tinkering with OTA updates ahead of you.
 
-[Next](./ex8.md)
+[Main Menu](../readme.md) | [Next](./ex8.md)
