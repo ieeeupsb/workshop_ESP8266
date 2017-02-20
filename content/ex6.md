@@ -84,4 +84,4 @@ void loop(){
 
 That should do the trick.
 
-[Back](https://github.com/nuieee/ESP8266-Workshop-Exercises)
+[Next](./ex7.md)

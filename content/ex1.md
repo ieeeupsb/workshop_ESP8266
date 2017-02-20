@@ -1,13 +1,61 @@
 # The Basics - Getting readings from a photoresistor
 
-Now that you know how to program pins, instead of sending data, lets obtain it from a sensor!
+Now that you know how to program pins, instead of sending data, lets obtain it from a sensor, and learn how to use the Serial Monitor!
 
 Ever heard of photoresistors? You have one with you. It simply is a resistor which its value varies according to exposed light. So you can read how much brightness there is and can be useful to manage other components such as turn of and on the LED, and that is what we'll do.
 
 ![Photoresistor](./images/photoresistor.png)
 
-So because this is an incremental project in respect to the previous one, we'll continue the code we've written before.
+We'll keep the code from the previous exercise and will add a feature to turn on and off the LED based on current brightness.
 
-WIP
+```c++
+void setup() {
+  Serial.begin(115200);
+  pinMode(D0, OUTPUT);
+  pinMode(A0, INPUT);
+}
 
-[Back](https://github.com/nuieee/ESP8266-Workshop-Exercises)
+void loop() {
+  int brightness = analogRead(A0);
+
+  Serial.println(brightness);
+
+  if(brightness < 500){
+    digitalWrite(D0, HIGH);  
+  } else{
+    digitalWrite(D0, LOW);
+  }
+}
+```
+
+Let's now uderstand what was done:
+
+## Read an input
+
+### pinMode(PIN, INPUT)
+
+We've already seen this method in the previous exercise but this time we need to initialize our photoresistor logic pin as an input, instead of an output. 
+
+### analogRead(PIN)
+
+Similar to what we do to change a value of a digital pin, this method is used to fetch data from a pin.
+
+## Serial
+
+Serial is a mean of communication used in many connecters we use daily such as USB, Ethernet, Bluetooth, and many others. In this case we'll use Serial communication to see on our computer screen the brightness value that is being read from the photoresistor.
+
+### Serial.begin(BAUD_RATE)
+
+This method is used to initialize Serial communication at a given baud rate (or speed).
+
+### Serial.println(CONTENT_TO_PRINT)
+
+This is used to print a value in a different line. Which means that is equivalent to doing <code>Serial.print()</code> with a <code>"\n"</code> at the end.
+
+### Serial Monitor
+
+To see the Serial values on the screen, all you have to do is click on the Serial Monitor button on the upper right corner of the IDE and <strong>make sure that 115200 is selected</strong> as the baud rate on the bottom of the Serial Monitor window, otherwise you couldn't tell what is being printed on the screen.
+
+![Serial](./images/serial.png)
+
+[Next](./ex2.md)
