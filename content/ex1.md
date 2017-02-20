@@ -38,7 +38,7 @@ We've already seen this method in the previous exercise but this time we need to
 
 ### analogRead(PIN)
 
-Similar to what we do to change a value of a digital pin, this method is used to fetch data from a pin.
+Similar to what we do to change a value of a digital pin, this method is used to fetch data from a pin. This values vary between 0 and 1024.
 
 ## Serial
 
