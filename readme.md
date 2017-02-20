@@ -19,6 +19,6 @@ Welcome! Here you can find guided exercises so you can learn as you go. If you f
  3. [AP mode and Captive portals](./content/ex6.md)
 
 ## Advanced-ish Stuff
- 1. [MQTT and AdafruitIO](./content/)
+ 1. [OTA updates](./content/ex7.md)
  2. [Blynk App](./content/ex8.md)
- 3. [OTA updates](./content/)
+ 3. [MQTT and AdafruitIO](./content/)
