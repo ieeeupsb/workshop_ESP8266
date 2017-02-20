@@ -26,3 +26,5 @@ Welcome! Here you can find guided exercises so you can learn as you go. If you f
 
 ## Extras
  1. [Other ways of programing the ESP8266](./content/interpreters.md)
+ 2. [ESP8266 Community Forum](http://www.esp8266.com/)
+ 3. [Kolban’s book on the ESP8266](http://neilkolban.com/tech/esp8266/)
