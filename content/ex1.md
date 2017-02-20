@@ -1,6 +1,6 @@
 # The Basics - Getting readings from a photoresistor
 
-Now that you know how to program pins, instead of sending data, lets obtain it from a sensor, and learn how to use the Serial Monitor!
+Now that you know how to program pins, instead of sending data, lets obtain it from a sensor and learn how to use the Serial Monitor!
 
 Ever heard of photoresistors? You have one with you. It simply is a resistor which its value varies according to exposed light. So you can read how much brightness there is and can be useful to manage other components such as turn of and on the LED, and that is what we'll do.
 
@@ -38,7 +38,7 @@ We've already seen this method in the previous exercise but this time we need to
 
 ### analogRead(PIN)
 
-Similar to what we do to change a value of a digital pin, this method is used to fetch data from a pin. This values vary between 0 and 1024.
+Similar to what we do to change a value of a digital pin, this method is used to fetch data from a pin. This values vary between 0 and 1023.
 
 ## Serial
 
@@ -54,7 +54,7 @@ This is used to print a value in a different line. Which means that is equivalen
 
 ### Serial Monitor
 
-To see the Serial values on the screen, all you have to do is click on the Serial Monitor button on the upper right corner of the IDE and <strong>make sure that 115200 is selected</strong> as the baud rate on the bottom of the Serial Monitor window, otherwise you couldn't tell what is being printed on the screen.
+To see the Serial values on the screen, all you have to do is click on the Serial Monitor button on the upper right corner of the IDE and <strong>make sure that 115200 is selected</strong> as the baud rate on the bottom of the Serial Monitor window, otherwise you won't be able to tell what is being printed on the screen.
 
 ![Serial](./images/serial.png)
 

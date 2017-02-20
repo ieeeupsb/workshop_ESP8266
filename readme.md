@@ -1,5 +1,5 @@
 # ESP8266/nodeMCU Workshop
-Welcome! Here you can find guided exercises so you can learn as you go. If if find any typo or error you are more than welcome to create a pull request.
+Welcome! Here you can find guided exercises so you can learn as you go. If you find any typo or error in the documentation, you are more than welcome to create a pull request.
 
 ## Introduction
  1. [Setting Up](./content/setup.md)
@@ -9,7 +9,7 @@ Welcome! Here you can find guided exercises so you can learn as you go. If if fi
 
 ## The Basics
  1. [Hello World](./content/helloworld.md)
- 2. [Getting readings from a fotoresistor](./content/ex1.md)
+ 2. [Getting readings from a photoresistor](./content/ex1.md)
  3. [Displaying data in a webpage](./content/ex2.md)
  4. [Recieving commands through HTTP GET and HTTP POST](./content/ex3.md)
 
