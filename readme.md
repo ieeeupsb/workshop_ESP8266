@@ -22,7 +22,6 @@ Welcome! Here you can find guided exercises so you can learn as you go. If you f
 ## Advanced-ish Stuff
  1. [OTA updates](./content/ex7.md)
  2. [Blynk App](./content/ex8.md)
- 3. [MQTT and AdafruitIO](./content/ex9.md)
 
 ## Extras
- 1. [Other ways of programing the ESP8266](./content/interpreters.md)
+ 1. [Other ways of programing the ESP8266](./content/ex9.md)
