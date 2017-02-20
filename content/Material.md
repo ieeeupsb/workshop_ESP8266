@@ -8,9 +8,9 @@ During this workshop we'll be using the following material:
 * Photoresistor
 
 
-## Breadbords
+## Breadboards
 
-### How do breadbords work? 
+### How do breadboards work? 
 Breadboards are one of the most fundamental pieces when learning how to build circuits. In this tutorial, you will learn a little bit about what breadboards are and how to use one.
 
 ![Breadboard](https://github.com/nuieee/ESP8266-Workshop-Exercises/blob/ws_v2/content/images/Breadboard.jpg)
