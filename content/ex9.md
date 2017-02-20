@@ -5,7 +5,8 @@
   
 ### The grandfather
    There's not much to say about BASIC, it's one of the most widespread languages and if you know a programmer with more than 40 years old, chances are it was his first programming language.
-   If you want to know more, check [ESP8266 BASIC](https://www.esp8266basic.com/) , they have a nice tutorial of how to flash the chip. Also, check **mmiscool** [tutorial](http://www.instructables.com/id/Easiest-ESP8266-Learning-IR-Remote-Control-Via-WIF/?ALLSTEPS) on how to do a remote using Basic, 
+   If you want to know more, check [ESP8266 BASIC](https://www.esp8266basic.com/) , they have a nice tutorial of how to flash the chip. Also, check **mmiscool** [tutorial](http://www.instructables.com/id/Easiest-ESP8266-Learning-IR-Remote-Control-Via-WIF/?ALLSTEPS) on how to do a remote using Basic, <code> print "Basic is not old, it's vintage"<code> 
+
 
 ### This python is not gonna strangle you
   One of the most loved programming languages, it has seen an increasing use in embedded systems programming. It's easy to write, full of documentation and libraries. Almost everyone loves it, so it had to be ported into our beloved chip. Micropython was born. The [documentation](https://docs.micropython.org/en/latest/esp8266/esp8266/tutorial/index.html) is very good. Warning: the memory of the ESP8266 may be scarse. You will probably need the version with more flash memory in fancy projects.
