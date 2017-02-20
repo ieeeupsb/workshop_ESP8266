@@ -13,4 +13,4 @@ These diagrams are very important so you don't forget to specify any state or an
 
 You can research more about this matter later. We just wanted to give you an overview about State Machines. We can ignore this since we'll be making simple projects for now, however this becomes really important when dealing with real projects.
 
-[Next](microcontroller.md)
+[Main Menu](../readme.md) | [Next](microcontroller.md)

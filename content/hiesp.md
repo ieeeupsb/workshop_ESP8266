@@ -10,4 +10,4 @@ We advise you you keep this tab open on the side as you will need to reference t
 
 Now lets get our hands on something meaningfull!
 
-[Next](./helloworld.md)
+[Main Menu](../readme.md) | [Next](./helloworld.md)
