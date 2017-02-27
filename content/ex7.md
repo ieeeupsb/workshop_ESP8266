@@ -4,7 +4,7 @@ If you were curious enough to take a look at SPIFFS, during the [EEPROM exercise
 
 There are a few aways to implement OTA (Over The Air) updates in the ESP8266. You have the ArduinoOTA library (easy way), and a couple of libraries and projects from the community that alow you to request the new sofware from a server and do everything simpler when updating a lot of devices at the same time.
 
-Here we will be using the ArduinoOTA library because the other options would require a server and a lot of fiddling aroud and tweaking the settings of it.
+Here we will be using the ArduinoOTA library because the other options would require a server and a lot of fiddling around and tweaking the settings of it.
 
 > If you end up configuring such server, let us know how you did it by creating a issue here. New ideas are always welcome.
 
