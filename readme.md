@@ -1,5 +1,7 @@
 # ESP8266/nodeMCU Workshop
-Welcome! Here you can find guided exercises so you can learn as you go. If you find any typo or error in the documentation, you are more than welcome to create a pull request.
+Welcome to our workshop on ESP8266. We followed a hands-on approach so be ready to get your hands dirty real soon!
+
+If you find any typo or error in the documentation, you are more than welcome to create a pull request.
 
 ## Introduction
  1. [Setting Up](./content/setup.md)
