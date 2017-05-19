@@ -20,8 +20,28 @@ Now go to Tools -> Board -> Boards Manager and search for ESP8266
 
 ![Arduino Add Board](../content/images/arduino3.png)
 
-If you are using linux, make sure to add your user to the 'dialout' group or you won't be able to upload code.
+## Linux specific instructions
 
-Then restart Arduino IDE and you're ready to go!
+If you are using Linux, make sure to add your user to the 'dialout' and 'tty' groups or you won't be able to upload code.
+
+<code>
+$sudo usermod -a -G tty yourUserName
+
+$sudo usermod -a -G dialout yourUserName
+</code>
+
+Log out and back in and you should be set.
+
+## macOS Sierra specific instructions
+
+As the official driver of the CH340G chip crashes the macOS kernel, a dedicated GitHub user created his own driver for the chip that is compatible with macOS Sierra.
+
+Folow [his instructions](https://github.com/adrianmihalko/ch340g-ch34g-ch34x-mac-os-x-driver) to install the driver.
+
+Then restart your machine and you're set!
+
+## OSX specific instructions
+
+Install the driver provided in [this page](https://www.wemos.cc/downloads) and restart.
 
 [Main Menu](../readme.md) | [Next](../content/statemachines.md)

@@ -1,6 +1,6 @@
 # Introduction - Material
 
-During this workshop we'll be using the following material:
+During this workshop we'll be using the following:
 
 * Breadboard
 * Jumper cables
@@ -11,7 +11,7 @@ During this workshop we'll be using the following material:
 ## Breadboards
 
 ### How do breadboards work? 
-Breadboards are one of the most fundamental pieces when learning how to build circuits. Next, you will learn how to use it.
+Breadboards are one of the most fundamental pieces when learning how to build circuits.
 
 ![Breadboard](https://github.com/nuieee/ESP8266-Workshop-Exercises/blob/ws_v2/content/images/Breadboard.jpg)
 
@@ -39,7 +39,7 @@ Jumpers are fitted by inserting their "end connectors" into the slots provided i
 
 ### What is a resistor?
 
-Resistors are electronic components which have a specific, constant electrical resistance. The resistor’s resistance limits the flow of electrons through a circuit. They are passive components, meaning they only consume power (and can’t generate it). Resistors are usually added to circuits where they complement active components like op-amps, microcontrollers, and other integrated circuits. Commonly resistors are used to limit current, divide voltages, and pull-up I/O lines. (Don't bother understand this fully right now)
+Resistors are electronic components which have a specific, constant electrical resistance. The resistor’s resistance limits the flow of electrons through a circuit. They are passive components, meaning they only consume power (and can’t generate it). Resistors are usually added to circuits where they complement active components like op-amps, microcontrollers, and other integrated circuits. Commonly resistors are used to limit current, divide voltages, and pull-up I/O lines. (Don't worry if you can't understand all of this right now. Everything will be explained further)
 
 ### The Ω
 

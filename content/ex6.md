@@ -1,13 +1,13 @@
 # Quality of Life - AP mode and Captive Portals
 
 You know those open WiFi networks that you connect to and regardless of the page you are trying to access, it manages to always serve you the exact same login page.
-That's page is called a Captive Portal because, well it's a webportal that keeps you 'captive' until you do whatever it wants you to do.
+That page is called a Captive Portal because... well it's a webportal that keeps you 'captive' until you do whatever it wants you to do.
 
-The ESP has the ability to create Captive Portals. Simple ones and ones that you would need a whole PhD just to understand how they work.
+The ESP has the ability to create Captive Portals. Simple captive portals and ones that you would need a whole PhD just to understand how they work.
 
 Let's get to it.
 
-### Creating an AP
+### Creating an AP (Access Point)
 
 The code below is the base from which we will build our Captive Portal. It creates a AP. There are few differences from the code used to connect to a AP.
 

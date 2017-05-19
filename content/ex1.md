@@ -21,7 +21,7 @@ void loop() {
   Serial.println(brightness);
 
   if(brightness < 500){
-    digitalWrite(D0, HIGH);  
+    digitalWrite(D0, HIGH);
   } else{
     digitalWrite(D0, LOW);
   }
@@ -34,7 +34,7 @@ Let's now uderstand what was done:
 
 ### pinMode(PIN, INPUT)
 
-We've already seen this method in the previous exercise but this time we need to initialize our photoresistor logic pin as an input, instead of an output. 
+We've already seen this method in the previous exercise but this time we need to initialize our photoresistor logic pin as an input, instead of an output.
 
 ### analogRead(PIN)
 
@@ -54,7 +54,7 @@ This is used to print a value in a different line. Which means that is equivalen
 
 ### Serial Monitor
 
-To see the Serial values on the screen, all you have to do is click on the Serial Monitor button on the upper right corner of the IDE and <strong>make sure that 115200 is selected</strong> as the baud rate on the bottom of the Serial Monitor window, otherwise you won't be able to tell what is being printed on the screen.
+To see the Serial values on the screen, all you have to do is click on the Serial Monitor button on the upper right corner of the IDE and <strong>make sure that 115200 is selected</strong> as the baud rate on the bottom of the Serial Monitor window, otherwise you won't be able to tell what is being printed on the screen. (The value should always be the same as the one set in your code)
 
 ![Serial](./images/serial.png)
 

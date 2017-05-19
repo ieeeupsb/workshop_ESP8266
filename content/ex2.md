@@ -56,7 +56,7 @@ server.on("/", [](){
 });	
 ```
 
-<code>server.on()</code> is used to create a webpage on the 'server' object.
+<code>server.on()</code> is used to create a webpage on the 'server' object ("on" as in "when" and not "turn on").
 
 The first argument ("/") sets the path to that page. In this case, root.
 
@@ -81,7 +81,7 @@ server.on("/off", [](){
 
 The only thing the function REQUIRES is a <code>server.send()</code> function call.
 
-This functions first argument is the [HTTP response code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) to send when a client connects to the webpage.
+This function's first argument is the [HTTP response code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) to send when a client connects to the webpage.
 
 The second is the type of content in the page:
  * text/plain
@@ -93,7 +93,7 @@ The last is a String with all the text and/or code for the webpage.
 
 Think of this function as the <code>return</code> call in a normal function.
 
-In <code>void loop()</code> just add <code>server.handleClient()</code>. This line of code will make plenty of things, for example, it will reconnect upon lost connection.
+In <code>void loop()</code> just add <code>server.handleClient()</code>. This line of code will handle all the server backend stuff for you.
 
 When you run this code and access the IP address printed to the Serial Monitor, you should see a page saying "Hello World".
 If you see that: Well done!
