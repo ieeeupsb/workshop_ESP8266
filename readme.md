@@ -5,7 +5,6 @@ If you find any typo or error in the documentation, you are more than welcome to
 
 ## Introduction
  1. [Setting Up](./content/setup.md)
- 2. [State Machines](./content/statemachines.md)
  3. [Programming a microcontroller](./content/microcontroller.md)
  4. [Hi ESP8266](./content/hiesp.md)
  5. [Material](https://github.com/nuieee/ESP8266-Workshop-Exercises/blob/master/content/Material.md)
