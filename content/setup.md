@@ -16,11 +16,20 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 
 ![Arduino Additional Boards Manager Urls](../content/images/arduino2.png)
 
-Now go to Tools -> Board -> Boards Manager and search for ESP8266
+Now go to Tools -> Board -> Boards Manager and search for ESP8266. If you don't find it try restarting the Arduino IDE.
 
 ![Arduino Add Board](../content/images/arduino3.png)
 
-If you are using linux, make sure to add your user to the 'dialout' group or you won't be able to upload code.
+# Linux Users
+
+If you are using linux, make sure to add your user to the 'dialout' group or you won't be able to upload code. This depends on your linux distibution, but on Ubuntu (and much others) can be done by:
+```bash
+usermod -a -G dialout "$USER"
+```
+
+# macOS Users
+
+In macOS you need to install CH40 drivers
 
 Then restart Arduino IDE and you're ready to go!
 
