@@ -24,11 +24,10 @@ Now go to Tools -> Board -> Boards Manager and search for ESP8266. If you don't 
 
 If you are using Linux, make sure to add your user to the 'dialout' and 'tty' groups or you won't be able to upload code.
 
-<code>
-$sudo usermod -a -G tty yourUserName
-
-$sudo usermod -a -G dialout yourUserName
-</code>
+```bash
+sudo usermod -a -G tty yourUserName
+sudo usermod -a -G dialout yourUserName
+```
 
 Log out and back in and you should be set.
 
