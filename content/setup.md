@@ -16,7 +16,7 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 
 ![Arduino Additional Boards Manager Urls](../content/images/arduino2.png)
 
-Now go to Tools -> Board -> Boards Manager and search for ESP8266
+Now go to Tools -> Board -> Boards Manager and search for ESP8266. If you don't find it try restarting the Arduino IDE.
 
 ![Arduino Add Board](../content/images/arduino3.png)
 
