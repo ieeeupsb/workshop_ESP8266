@@ -2,16 +2,17 @@
 
 During this workshop we'll be using the following:
 
-* Breadboard
 * Jumper cables
-* Resistor
 * Photoresistor
+* Temperature Sensor
+* Pressure Sensor
+* Movement Sensor
 
 
 ## Breadboards
 
 ### How do breadboards work? 
-Breadboards are one of the most fundamental pieces when learning how to build circuits.
+Despite we'll not be using them in this workshop, breadboards are one of the most fundamental pieces when learning how to build circuits.
 
 ![Breadboard](https://github.com/nuieee/ESP8266-Workshop-Exercises/blob/ws_v2/content/images/Breadboard.jpg)
 
@@ -58,5 +59,29 @@ A photoresistors are also known as light dependent resistors or LDRs and are oft
 In view of their low cost, ease of manufacture, and ease of use, LDRs have been used in a variety of different applications. In the past LDRs were used in photographic light meters, although they are still used nowadays. When light falls it will increase its electrical resistance giving a nice difference in magnitude so they are very precise. The sensitivity of light dependent resistors or photoresistors also varies with the wavelength of the incident light.
 
 LDRs are made from semiconductor materials to enable them to have their light sensitive properties. Many materials can be used, but one popular material for these photoresistors is cadmium sulphide, CdS. (again, no need to uderstand this last paragraph throughly)
+
+## DHT11 Temperature Sensor
+
+Like the name suggests, this device is able to measure the ambient temperature.
+
+![DHT11](images/DHT11.jpg)
+
+Keep in mind that like all sensors it doesn't give you exactly and trustworthly the real value. Some sensors give you very accurate values that you can trust but it is never exactly the real value. With that being said this sensor is not all that acurate as you will see, so dont strange the odd values.
+
+When analysing sensors it is a good idea to read some of these accuracy and other parameters on its datasheet. For the most times, they are easily found using Google. But we'll spare you that work and just hand it to you.
+
+<a href="https://akizukidenshi.com/download/ds/aosong/DHT11.pdf">DHT11 Datasheet</a>
+
+## BMP280 Pressure Sensor
+
+BMP280 is a very good sensor from Bosch and it mesures pressure very accuratly.
+
+![BMP280](images/bmp280.jpg)
+
+## PIR Movement Sensor
+
+This sensor can detect changes in radiation to detect movement and it is widely used in automatic lights, like in bathrooms and some public places.
+
+![PIR Movement Sensor](images/pir.jpg)
 
 [Main Menu](../readme.md) | [Next](./helloworld.md)
