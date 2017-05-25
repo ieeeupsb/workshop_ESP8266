@@ -33,11 +33,12 @@ void setup() {
 }
 
 void loop() {
-  digitalWrite(ledPin, state);
+  while(1);
 }
 
 void blink() {
   state = !state;
+  digitalWrite(ledPin, state);
 }
 
 ```
