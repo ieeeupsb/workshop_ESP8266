@@ -44,7 +44,7 @@ void blink() {
 ```
 And that's how an interrupt works! 
 ## More on Interrupts
-You might want to have a section of your code not affected by your interrupts, a chunk of code that has to run regardless of what happens in the world (usually you use this when you have time sensitive code, and an interrupt might mess up with the time). The way you do that is using the `noInterrupts()` function. To enable interrupts again, you just have to call `interrupts()` . So, your code should look something like this:
+You might want to have a section of your code not affected by your interrupts, a chunk of code that has to run regardless of what happens in the world (usually you use this when you have time sensitive code, and an interrupt might mess up with the timers). The way you do that is using the `noInterrupts()` function. To enable interrupts again, you just have to call `interrupts()` . So, your code should look something like this:
 ```Arduino
 void loop()
 {
@@ -54,7 +54,7 @@ void loop()
   // other code here
 }
 ```
-Maybe you will want to stop using interrupts somewhere in your code. That can be easily done with the `detachInterrupt(interruptPin)` function. Don't forget: the _interruptPin 0_ corresponds to the _Arduino pin 2_, so you can use the `detachInterrupt(digitalPinToInterrupt(2))` if you want to detach an interrupt to pin 2. Otherwise, use `detachInterrupt(0)`
+Maybe you will want to stop using interrupts somewhere in your code. That can be easily done with the `detachInterrupt(interruptPin)` function. Don't forget: the _interruptPin 0_ corresponds to the _ESP8266 pin 2_, so you can use the `detachInterrupt(digitalPinToInterrupt(2))` if you want to detach an interrupt to pin 2. Otherwise, use `detachInterrupt(0)`
 
 [Main Menu](../README.md) | [Next](./ex9.md)
 
