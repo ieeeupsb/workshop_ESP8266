@@ -1,4 +1,4 @@
-# Introduction - State Machines
+# Extras - State Machines
 
 Like any other kind of programming the best way is to cut down to pen and paper and design your idea before facing the IDE that can be distractive when you need to code a slightly more complex function.
 
@@ -13,4 +13,4 @@ These diagrams are very important so you don't forget to specify any state or an
 
 You can research more about this matter later. We just wanted to give you an overview about State Machines. We can ignore this since we'll be making simple projects for now, however this becomes really important when dealing with real projects.
 
-[Main Menu](../readme.md) | [Next](microcontroller.md)
+[Main Menu](../readme.md)
