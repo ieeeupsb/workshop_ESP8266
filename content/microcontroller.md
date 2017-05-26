@@ -16,6 +16,6 @@ void loop(){
 
 The code inside the <code>void setup()</code> routine will only run once when the microcontroller boots. So it will consist in pin initializations (identifying outputs and inputs), connecting to WiFi, along with other initializations.
 
-On the other hand ```void loop()``` is code that will run repeatedly, you can think it as an uncondicional loop ( ```while(true)``` ) that is commonly used to update reading from sensors (inputs), and calculate new outputs.
+On the other hand ```void loop()``` is code that will run **repeatedly**. You can think of it as an uncondicional loop ( ```while(true)``` ) that is commonly used to update readings from sensors (inputs), and calculate new outputs.
 
 [Main Menu](../readme.md) | [Next](./hiesp.md)
