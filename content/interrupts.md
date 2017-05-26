@@ -56,5 +56,5 @@ void loop()
 ```
 Maybe you will want to stop using interrupts somewhere in your code. That can be easily done with the `detachInterrupt(interruptPin)` function. Don't forget: the _interruptPin 0_ corresponds to the _Arduino pin 2_, so you can use the `detachInterrupt(digitalPinToInterrupt(2))` if you want to detach an interrupt to pin 2. Otherwise, use `detachInterrupt(0)`
 
-[Main Menu](../README.md) | [Next](./interrupts.md)
+[Main Menu](../README.md) | [Next](./ex9.md)
 
