@@ -13,11 +13,11 @@ An hardware interrupt is nothing more than a signal going to the processor sayin
 
 ![interrupts](https://github.com/nuieee/workshop_ESP8266/blob/aveiro/content/images/esp8266-interrupts.png)<br>
 
-Whenever an interrupt is triggered, the controller stores the address of the current program counter ( so he can go back to where it was when he finishes handling  the interrupt ) and goes to the address of the function who handles the interrupt (the interrupt service routine, ISR) . After that, he returns to the program.
+Whenever an interrupt is triggered, the controller stores the address of the current program counter ( so he can go back to where it was when he finishes handling  the interrupt ) and goes to the address of the function who handles the interrupt (the interrupt service routine, ISR) . After that, it returns to the program.
 ## Let's implement
 
 First, you need to know which pins support the use of interrupts. These can change depending on the board used. On your `void setup()` function, you need to attach the pin to an interrupt, and that is done using the `attachInterrupt(interruptPin, functionCalled, mode)`. Let's dissect what is happening here:
-You can use the function `digitalPinToInterrupt(2)` which maps the pin to the corresponding interrupt pin.
+You can use the function `digitalPinToInterrupt(2)` which maps the pin 2 to the corresponding interrupt pin.
 As for the **functionCalled**, that's the function the code calls whenever an interrupt is triggered. Now, about the mode, that can either be **LOW** to trigger the interrupt whenever the pin is low, **CHANGE** to trigger the interrupt whenever the pin changes its value, **RISING** for when the pin goes from low to high, **FALLING** for when the pin goes from high to low.
 Let's write a simple example. Whenever the interrupt pin changes state a led will change its state. Even though the code is stuck in an infinite loop!
 
