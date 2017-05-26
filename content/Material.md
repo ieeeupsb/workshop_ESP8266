@@ -12,7 +12,7 @@ During this workshop we'll be using the following:
 ## Breadboards
 
 ### How do breadboards work? 
-Despite we'll not be using them in this workshop, breadboards are one of the most fundamental pieces when learning how to build circuits.
+Breadboards are one of the most fundamental pieces when learning how to build circuits.
 
 ![Breadboard](https://github.com/nuieee/ESP8266-Workshop-Exercises/blob/ws_v2/content/images/Breadboard.jpg)
 
