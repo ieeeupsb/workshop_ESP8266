@@ -3,11 +3,11 @@
 So now we'll get our hands dirty! Lets start small by simply making an LED blink.
 </br>The ESP8266 comes with an LED already built-in... It might be small and hard to spot, but it will become quite noticeable once you upload some lines of code.
 
-Usually when connecting LEDs to the ESP8266, you would need to use an appropriate resistor and connect the terminals like so:
+Usually when connecting an LED to the ESP8266, you would need to use an appropriate resistor and connect the terminals accordingly, like so:
 
 ![Hello World](./images/blink.PNG)
 
-Since we will be using the built-in LED, all the connections are already in the board itself. But we still need to turn on the LED by applying a pottential difference - also known as **Voltage** - which will create an electric current through the LED. We will do this using some functions, particularly ```pinMode(...)``` and ```digitalWrite(..., ...)```.
+Since **we will be using the built-in LED**, all the connections are already in the board itself. But we still need to turn on the LED by applying a pottential difference - also known as **Voltage** - which will create an electric current through the LED. We will do this using some functions, particularly ```pinMode(...)``` and ```digitalWrite(..., ...)```.
 
 Time to do some programming!
 
