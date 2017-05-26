@@ -4,9 +4,7 @@ To much times we are in our bed and the switch to turn on/off the lights is sooo
 
 ## The circuit
 
-We will use a LED to simulate the lights, connecting the LED to the D0 pin in our dev board. Using a resistor and jumper cables, the circuit should look something like this:
-
-![alt text](https://github.com/nuieee/ESP8266-Workshop-Exercises/blob/master/content/images/e782f7226577cb5059a5345e3de38d8e.png)
+We will use a LED to simulate the lights, connecting the LED to the D0 pin in our dev board. 
 
 ## The App
 First, install the Blynk app.
