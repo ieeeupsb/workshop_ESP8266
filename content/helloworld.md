@@ -4,7 +4,7 @@ So now we'll get our hands dirty! Lets start small by simply making a LED blink.
 
 All we have to do is to connect the longer (positive) pin of the LED to a logic pin of the ESP8266 and the other pin to Ground (GND) as follows:
 
-![Hello World](./images/helloworld.png)
+![Hello World](./images/blink.PNG)
 
 What we are doing is setting one of the led pins to 0V and the value of the other one will be set in the chip's programming. Since there's only electric current when a potencial difference is applied, the LED will only turn on when the logic pin is different than 0V. Furthermore, it was used a resistor to prevent short circuiting the LED and the board itself.
 
@@ -12,15 +12,15 @@ In the image above we've used the logic pin D0 which corresponds to pin number 1
 
 Next you have to program it!
 
-```c++
+```Arduino
 void setup() {
-  pinMode(D0, OUTPUT);
+  pinMode(D1, OUTPUT);
 }
 
 void loop() {
-  digitalWrite(D0, HIGH);
+  digitalWrite(D1, HIGH);
   delay(500);
-  digitalWrite(D0, LOW);
+  digitalWrite(D1, LOW);
   delay(500);
 }
 ```
