@@ -9,6 +9,8 @@ Connect the PIR **VCC** pin to the **5V** pin of the ESP8266, and the PIR **GND*
 </br>Finally, unlike other sensors we saw until now, the PIR sensor only outputs two values - ```HIGH``` or ```LOW``` - so we can connect it to a digital pin (there's no need to use our only analog pin). So connect **OUT** on the PIR to **D1** on the ESP.
 >If you're having trouble distinguishing the pins on the PIR, you can always take off the white housing to read the indications - it comes off easily with a little persistance.
 
+![PIR Pinout](./images/pir-pinout.jpg)
+
 ## Programming...
 
 The code for the PIR sensor is rather easy, depending on what you want to make with it.
