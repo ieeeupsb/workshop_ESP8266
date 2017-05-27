@@ -133,9 +133,9 @@ This is our "final code" for this example. Try uploading it to your ESP8266, and
 #include <EEPROM.h>
 #define LED_OUTSIDE D1
 
-const char* ssid = "Apollo29A";
-const char* password = "cachogay";
-const char* Hostname = "myESP8266";
+const char* ssid = "**********";		// DON'T FORGET TO CHANGE THIS!
+const char* password = "*******";
+const char* Hostname = "*******";
 
 ESP8266WebServer server(80);                    // Create a server on port 80
 
