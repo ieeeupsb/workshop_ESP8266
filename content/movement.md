@@ -23,7 +23,7 @@ void setup(){
   reading = LOW;
   Serial.begin(115200);
   
-  Serial.print("Motion detection starting at ");
+  Serial.print("\nMotion detection starting at ");
   Serial.print(millis()/(1000*60));
   Serial.print("m"); Serial.print(millis()/(1000));
   Serial.println("s."); Serial.println();
@@ -38,14 +38,14 @@ void loop(){
   if (reading != state){  // State has changed, could be movement detection...
     state = reading;
     if (state == HIGH){   // It is movement indeed.
-      Serial.println("Motion detected! Timestamp: ");
+      Serial.print("Motion detected! Timestamp: ");
       Serial.print(millis()/(1000*60));
-      Serial.print("m"); Serial.print(millis()/(1000));
+      Serial.print("m"); Serial.print((millis()%60000)/1000);
       Serial.println("s");
     } else {              // Previous motion stopped
-      Serial.println("Motion stopped. Timestamp: ");
+      Serial.print("Motion stopped. Timestamp: ");
       Serial.print(millis()/(1000*60));
-      Serial.print("m"); Serial.print(millis()/(1000));
+      Serial.print("m"); Serial.print((millis()%60000)/1000);
       Serial.println("s");
     }
   }
