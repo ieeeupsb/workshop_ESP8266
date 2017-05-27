@@ -58,4 +58,4 @@ To see the Serial values on the screen, all you have to do is click on the Seria
 
 ![Serial](./images/serial.png)
 
-[Main Menu](../readme.md) | [Next](./pressure.md)
+[Main Menu](../readme.md) | [Next](./pressureAndTemperature.md)
