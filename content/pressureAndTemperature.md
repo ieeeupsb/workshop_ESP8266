@@ -49,6 +49,8 @@ uint32_t readRawPressure(void);
 
 Similarly to the pressure sensor you have to create an instance of *dht* however now we need to define a global variable to store the pin in which we will connect.
 
+![DHT11 Temperature Sensor](./images/dht11.PNG)
+
 ```Arduino
 dht DHT;
 
