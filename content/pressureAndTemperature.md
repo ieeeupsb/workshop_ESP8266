@@ -52,7 +52,7 @@ Similarly to the pressure sensor you have to create an instance of *dht* however
 ```Arduino
 dht DHT;
 
-#define DHT11_PIN 5
+#define DHT11_PIN D0
 ```
 
 This time you don't need to do anything on the *void setup()* but everytime you want to read from the sensor you have to call:
