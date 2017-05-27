@@ -17,7 +17,7 @@ Before you get mesurements from a sensor it is **very common** to be required to
 
 So all you have to do is create an instance of *Adafruit_BMP085* and make it global by writing this outside any function:
 
-![BMP180](./images/bmp180.PNG)
+![BMP](./images/bmp180.PNG)
 
 ```Arduino
 Adafruit_BMP085 bmp;
