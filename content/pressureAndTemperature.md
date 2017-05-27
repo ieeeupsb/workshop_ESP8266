@@ -53,8 +53,6 @@ Similarly to the pressure sensor you have to create an instance of *SimpleDHT11*
 
 ![DHT11 Temperature Sensor](./images/dht11.PNG)
 
->**Please note:** You should use the version **1.2.3** of the DHT Library, not the latest one!
-
 ```Arduino
 int pinDHT11 = D0;
 SimpleDHT11 dht11;
