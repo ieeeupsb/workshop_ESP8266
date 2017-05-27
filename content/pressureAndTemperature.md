@@ -6,7 +6,7 @@ Let's apply some pressure now. For that lets grab our BMP180, a sensor to measur
 
 For these sensors there's libraries that can help you keeping things simple and the code clean. The library for the BMP180 has a different name from the sensor, don't strange, it is made to work with a range of sensors and this is one of them, just like the library for DHT11 is made for many DHT sensors not just the DHT11. You'll come across this kind of things very often.
 
-Go ahead and grab the **Adafruit BMP085** and **DHT sensor library** libraries from the library manager, going into *Sketch -> Include Library -> Manage Libraries* and searching for them.
+Go ahead and grab the **Adafruit BMP085** and **SimpleDHT** libraries from the library manager, going into *Sketch -> Include Library -> Manage Libraries* and searching for them.
 Now that you've downloaded the libraries, they are available for you to use.
 
 ## For the pressure sensor:
@@ -49,30 +49,28 @@ uint32_t readRawPressure(void);
 
 ## For the temperature sensor
 
-Similarly to the pressure sensor you have to create an instance of *dht* however now we need to define a global variable to store the pin in which we will connect.
+Similarly to the pressure sensor you have to create an instance of *SimpleDHT11* however now we need to define a global variable to store the pin in which we will connect.
 
 ![DHT11 Temperature Sensor](./images/dht11.PNG)
 
 >**Please note:** You should use the version **1.2.3** of the DHT Library, not the latest one!
 
 ```Arduino
-#include "DHT.h"
-#define DHTPIN D0
-#define DHTTYPE DHT11
-
-DHT dht(DHTPIN, DHTTYPE);
-
+int pinDHT11 = D0;
+SimpleDHT11 dht11;
 ```
 
-This time all you have to do in ```void setup()``` is call the function ```dht.begin();```. But everytime you want to read from the sensor you have to call:
+This time you don't need to do anything on the *void setup()* but everytime you want to read from the sensor you have to call this function specifying two variables in which you'll store the measurements:
 
 ```Arduino
-  float h = dht.readHumidity();
-  float t = dht.readTemperature();
+int temperature = 0;
+int humidity = 0;
+dht11.read(pinDHT11, &temperature, &humidity, NULL)
 ```
 
-Keep in mind that the values take some time to refresh. You could use a ```delay(...)``` of aprox. 2 seconds to prevent repeated values.
-</br>Go ahead and make it print those values onto the **Serial Monitor**, later we'll print on a webpage... You'll get there!
+Then you can use those two variables.
+
+Go ahead and make it print those values onto the **Serial Monitor** and later on in webpages... You'll get there!
 
 Ready? Let's move!
 
