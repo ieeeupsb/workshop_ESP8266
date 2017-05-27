@@ -26,14 +26,14 @@ SimpleDHT11 dht11;
 Everytime you want to read from the sensor you have to call this function specifying two variables in which you'll store the measurements:
 
 ```Arduino
-int temperature = 0;
-int humidity = 0;
+byte temperature = 0;
+byte humidity = 0;
 dht11.read(pinDHT11, &temperature, &humidity, NULL)
 ```
 
 Then you can use those two variables.
 
-Go ahead and make it print those values onto the **Serial Monitor** and later on in webpages... You'll get there!
+Go ahead and make it print those values onto the **Serial Monitor** (remember to convert to integers before printing) and later on in webpages... You'll get there!
 
 Ready? Let's move!
 
