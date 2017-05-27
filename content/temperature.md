@@ -18,6 +18,7 @@ It is crucial to make it global so you can acess it no matter what function you'
 ![DHT11 Temperature Sensor](./images/dht11.PNG)
 
 ```Arduino
+#include <SimpleDHT.h>
 int pinDHT11 = D0;
 SimpleDHT11 dht11;
 ```
