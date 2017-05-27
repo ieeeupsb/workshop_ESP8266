@@ -71,7 +71,8 @@ This time all you have to do in ```void setup()``` is call the function ```dht.b
   float t = dht.readTemperature();
 ```
 
-Go ahead and make it print those values onto the **Serial Monitor**, later we'll print on a webpage... You'll get there!
+Keep in mind that the values take some time to refresh. You could use a ```delay(...)``` of aprox. 2 seconds to prevent repeated values.
+</br>Go ahead and make it print those values onto the **Serial Monitor**, later we'll print on a webpage... You'll get there!
 
 Ready? Let's move!
 
