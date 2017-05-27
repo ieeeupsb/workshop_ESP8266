@@ -53,26 +53,25 @@ Similarly to the pressure sensor you have to create an instance of *dht* however
 
 ![DHT11 Temperature Sensor](./images/dht11.PNG)
 
-```Arduino
-dht DHT;
-
-#define DHT11_PIN D0
-```
-
-This time you don't need to do anything on the *void setup()* but everytime you want to read from the sensor you have to call:
+>**Please note:** You should use the version **1.2.3** of the DHT Library, not the latest one!
 
 ```Arduino
-DHT.read11(DHT11_PIN);
+#include "DHT.h"
+#define DHTPIN D0
+#define DHTTYPE DHT11
+
+DHT dht(DHTPIN, DHTTYPE);
+
 ```
 
-Then you can access these two variable inside the DHT object you instanciated:
+This time all you have to do in ```void setup()``` is call the function ```dht.begin();```. But everytime you want to read from the sensor you have to call:
 
 ```Arduino
-float DHT.temperature
-float DHT.humidity
+  float h = dht.readHumidity();
+  float t = dht.readTemperature();
 ```
 
-Go ahead and make it print those values onto the **Serial Monitor** and later on in webpages... You'll get there!
+Go ahead and make it print those values onto the **Serial Monitor**, later we'll print on a webpage... You'll get there!
 
 Ready? Let's move!
 
