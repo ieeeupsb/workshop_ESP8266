@@ -28,7 +28,8 @@ Everytime you want to read from the sensor you have to call this function specif
 ```Arduino
 byte temperature = 0;
 byte humidity = 0;
-dht11.read(pinDHT11, &temperature, &humidity, NULL)
+dht11.read(pinDHT11, &temperature, &humidity, NULL);
+delay(2000);
 ```
 
 Then you can use those two variables.
