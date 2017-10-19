@@ -12,14 +12,16 @@ Since **we will be using the built-in LED**, all the connections are already in 
 Time to do some programming!
 
 ```Arduino
+#define led_pin LED_BUILTIN
+
 void setup() {
-  pinMode(LED_BUILTIN, OUTPUT);      // Initialize LED_BUILTIN as an output.
+  pinMode(led_pin, OUTPUT);      // Initialize LED_BUILTIN as an output.
 }
 
 void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);   // Turn the LED on (HIGH is the voltage level)
+  digitalWrite(led_pin, HIGH);   // Turn the LED on (HIGH is the voltage level)
   delay(1000);                       // Wait one second (1000ms)
-  digitalWrite(LED_BUILTIN, LOW);    // Turn the LED off by making the voltage LOW
+  digitalWrite(led_pin, LOW);    // Turn the LED off by making the voltage LOW
   delay(1000);                       // Wait another second
 }
 ```
