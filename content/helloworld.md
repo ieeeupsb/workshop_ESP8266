@@ -45,4 +45,6 @@ This function is inside ```void loop() { ... }``` so it keeps repeating forever,
 Finally to make the blinking noticeable we've introduced a delay to make the chip wait before executing the next instruction.
 </br>This function is useful when dealing with any microcontroller, as you might see later on.
 
+## Now, to check if you understood, try lighting up the external LED you just mounted!
+
 [Main Menu](../readme.md) | [Next](./ex1.md)
