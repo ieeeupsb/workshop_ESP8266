@@ -24,28 +24,30 @@ ESP8266WebServer server(80);					// Create a server on port 80
 Now fill the <code>setup()</code> routine with this code.
 
 ```c++
-pinMode(LED_BUILTIN, OUTPUT);
-Serial.begin(115200);                             // Initialize the serial bus with a 115200 baud rate. This will allow us to send data back to the computer through the USB cable
-WiFi.begin(ssid, password);                       // Connect to the WiFi network set in the code above.
-Serial.println("");
+void setup() {
+  pinMode(LED_BUILTIN, OUTPUT);
+  Serial.begin(115200);                             // Initialize the serial bus with a 115200 baud rate. This will allow us to send data back to the computer through the USB cable
+  WiFi.begin(ssid, password);                       // Connect to the WiFi network set in the code above.
+  Serial.println("");
 
-while (WiFi.status() != WL_CONNECTED){            // Wait for the connection to be established.
-  delay(500);
-  Serial.print(".");                              // Send a '.' through the serial bus while we wait.
+  while (WiFi.status() != WL_CONNECTED){            // Wait for the connection to be established.
+    delay(500);
+    Serial.print(".");                              // Send a '.' through the serial bus while we wait.
+  }
+
+  Serial.println("");                               // Send a '\n'
+  Serial.print("Connected to ");                    // 
+  Serial.println(ssid);                             // Print the network the board connected to 
+  Serial.print("IP address: ");                     //
+  Serial.println(WiFi.localIP());                   // and the IP address it recieved from the DHCP server
+
+  server.on("/", [](){                              // Create a webpage for the server
+    server.send(200, "text/plain", "hello world");  //
+  });                                               //
+
+  server.begin();                                   // Start the server
+  Serial.println("HTTP server started");            // Signal that to the PC
 }
-
-Serial.println("");                               // Send a '\n'
-Serial.print("Connected to ");                    // 
-Serial.println(ssid);                             // Print the network the board connected to 
-Serial.print("IP address: ");                     //
-Serial.println(WiFi.localIP());                   // and the IP address it recieved from the DHCP server
-
-server.on("/", [](){                              // Create a webpage for the server
-  server.send(200, "text/plain", "hello world");  //
-});                                               //
-
-server.begin();                                   // Start the server
-Serial.println("HTTP server started");            // Signal that to the PC
 ```
 
 Let's pay a little bit more attention to the webpage creation code.
@@ -56,7 +58,7 @@ server.on("/", [](){
 });	
 ```
 
-<code>server.on()</code> is used to create a webpage on the 'server' object ("on" as in "when" and not "turn on").
+<code>server.on()</code> is used to create a webpage on the 'server' object we created earlier. In this context, "on" menas "when someone requests this page" and not "turn on".
 
 The first argument ("/") sets the path to that page. In this case, root.
 
@@ -66,7 +68,8 @@ The second is a function. That means you can do stuff like this:
 server.on("/coolstuff.html", serveWebpage);	
 ```
 
-This funtion runs when you access the webpage, therefore if you want to, you can put a <code>digitalWrite()</code> function call here so that when you access the page it turn a pin ON or OFF.
+This funtion runs when you access the webpage, therefore if you want to, you can put a <code>digitalWrite()</code> function call here so that when you access the page it turns a pin ON or OFF.
+
 Example:
 ```c++
 server.on("/on", [](){
@@ -79,7 +82,7 @@ server.on("/off", [](){
 });
 ```
 
-The only thing the function REQUIRES is a <code>server.send()</code> function call.
+The only thing the function **REQUIRES** is a <code>server.send()</code> function call.
 
 This function's first argument is the [HTTP response code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) to send when a client connects to the webpage.
 

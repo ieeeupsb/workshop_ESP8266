@@ -10,7 +10,7 @@ HTTP is an internet protocol to exchange information, and GET is a type of reque
 
 ### Arguments
 
-What if you not only wanted to make a request but also wanted to attach some information to it? Like asking for a pizza and passing the ID of the pizza you want. You can do this by passing arguments in GET Requests (Actually you can POST as well).
+What if you not only wanted to make a request but also wanted to attach some information to it? Like asking for a pizza and passing the ID of the pizza you want. You can do this by passing arguments in GET Requests (Actually you can use POST as well, as you'll see).
 
 In this case you're not going to order any pizzas. Instead we will send a value from 0-255 to specify the rate of a PWM (Pulse Width Modulation) signal.
 
@@ -44,8 +44,9 @@ server.on("/setpos", [](){
     int rate_i = rate_s.toInt();
 
     // Check if the value passed is between 0-255
-    // Check if the String didn't cointain any more than the number
-    // And the conversion from String to integer was successfull
+    // If rate_s contained a char, the returned value of 'rate_s.toInt()'
+    //     would be '0', which is a valid input, therefore we need to
+    //     convert rate_i back to a String and compare it to rate_s
     if(rate_i >= 0 && rate_i <= 255 && String(rate_i) == rate_s){
 
       // If so write that value to the pin
@@ -65,13 +66,17 @@ server.on("/setpos", [](){
 To force a page to only recieve requests of a certain type use:
 
 ```Arduino
+server.on("/setpos", HTTP_GET, [](){});
+```
+or
+```Arduino
 server.on("/setpos", HTTP_POST, [](){});
 ```
 
-## Telekinesis  - Controlling at a distance
+## Controlling at a distance
 
 Now that you can display simple pages, and send commands to your ESP through HTTP GET or POST, can you make a page that does all of this at once? Let's control different LEDs in a single page with some buttons using **HTTP POST**...
-</br>As you will notice, commands sent by POST will not show up in the URL.
+</br>As you will notice, commands sent by POST will not show up in the URL as the GET arguments do.
 
 ### Introducing HTML
 
@@ -86,7 +91,7 @@ This is the HTML code that shows a simple button in a webpage. But keep in mind 
 ```HTML
 <button type="submit" name="BUILTIN" value="true" style="font-size: 30px; border: none; border-radius: 15px; padding: 15px 32px; color: white; background-color: rgb(23, 57, 86); box-shadow: 5px 5px 5px rgb(43, 131, 183);">Switch built-in led</button>
 ```
->To keep it simple, we won't use CSS. In fact, to simplify even more, we'll put the HTML code for the whole page in a single line. **It is not be recommended**, and it is definitely not easy to unserstand, but for now it is good enough.
+>To keep it simple, we won't use CSS. In fact, to simplify even more, we'll put the HTML code for the whole page in a single line. **It is not be recommended**, and it is definitely not easy to understand, but for now it's good enough.
 
 We want a simple page that looks a little something like this:
 ```HTML
@@ -135,13 +140,11 @@ This is our "final code" for this example. Try uploading it to your ESP8266, and
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
 #include <ESP8266WebServer.h>
-#include <ESP8266mDNS.h>
-#include <EEPROM.h>
+
 #define LED_OUTSIDE D1
 
 const char* ssid = "**********";		// DON'T FORGET TO CHANGE THIS!
 const char* password = "*******";
-const char* Hostname = "*******";
 
 ESP8266WebServer server(80);                    // Create a server on port 80
 
@@ -165,10 +168,7 @@ void setup(){
   Serial.print("IP address: ");                     //
   Serial.println(WiFi.localIP());                   // and the IP address it recieved from the DHCP server
     
-  if (MDNS.begin(Hostname)) {
-    Serial.println("MDNS responder started");
-  }
-                                               //
+
 
   server.on("/switch", [](){
     if(server.args()==1 && server.argName(0) == "BUILTIN"){
@@ -196,7 +196,6 @@ void setup(){
   digitalWrite(LED_BUILTIN, LOW);
   delay(500);
   digitalWrite(LED_BUILTIN, HIGH);
-  digitalWrite(D0, LOW);
 }
 
 
