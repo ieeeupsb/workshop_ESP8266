@@ -10,9 +10,15 @@ HTTP is an internet protocol to exchange information, and GET is a type of reque
 
 ### Arguments
 
-What if you not only wanted to make a request but also wanted to attach some information to it? Like asking for a pizza and pass the information that you are vegetarian. You can do this by passing arguments in GET Requests, actually in any type of HTTP Web Request, like POST requests and so on, that we'll analyse later on.
+What if you not only wanted to make a request but also wanted to attach some information to it? Like asking for a pizza and passing the ID of the pizza you want. You can do this by passing arguments in GET Requests (Actually you can POST as well).
 
-In this case we are not ordering any pizzas (ohhhh...) instead we will send a value from 0-255 to specify the rate of a PWM signal.
+In this case you're not going to order any pizzas. Instead we will send a value from 0-255 to specify the rate of a PWM (Pulse Width Modulation) signal.
+
+Examples of passing arguments with GET requests:
+```
+website.com/webpage?arg1=value1
+website.com/webpage?arg1=value1&arg2=value2
+```
 
 
 ## Functions that you can use:
