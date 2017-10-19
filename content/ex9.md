@@ -5,7 +5,7 @@
   
 ### The grandfather
    There's not much to say about BASIC, it's one of the most widespread languages and if you know a programmer with more than 40 years old, chances are it was his first programming language.
-   If you want to know more, check [ESP8266 BASIC](https://www.esp8266basic.com/) , they have a nice tutorial of how to flash the chip. Also, check **mmiscool** [tutorial](http://www.instructables.com/id/Easiest-ESP8266-Learning-IR-Remote-Control-Via-WIF/?ALLSTEPS) on how to do a remote using Basic,
+   If you want to know more, check [ESP8266 BASIC](https://www.esp8266basic.com/) , they have a nice tutorial of how to flash the chip. Also, check **mmiscool** [tutorial](http://www.instructables.com/id/Easiest-ESP8266-Learning-IR-Remote-Control-Via-WIF/?ALLSTEPS) on how to do a remote controller using Basic,
    
    
    <code> print "Basic is not old, it's vintage"</code> .
@@ -25,4 +25,4 @@
   While some of these projects are not yet free of bugs, some just exist for the sake of it, it's nice to break from the cycle of coding, compiling, flashing, and so on typical of micro systems programming. For small projects, something like MicroPython is utterly enjoyable. Experiment, there are plenty of things to work with and if you are a software developer or just trying to do some hacks, not having to go under the hood with something like C or Assembly can be definitely be a painkiller. 
 
 
-[Main Menu](../readme.md)
+[Main Menu](../readme.md) | [Next](../content/statemachines.md)

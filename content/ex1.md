@@ -4,14 +4,14 @@ Now that you know how to program pins, instead of sending data, lets obtain it f
 
 Ever heard of photoresistors? You have one with you. It simply is a resistor which its value varies according to exposed light. So you can read how much brightness there is and can be useful to manage other components such as turn of and on the LED, and that is what we'll do.
 
-![Photoresistor](./images/photoresistor.png)
+![Photoresistor](./images/photoresistor.PNG)
 
 We'll keep the code from the previous exercise and will add a feature to turn on and off the LED based on current brightness.
 
-```c++
+```Arduino
 void setup() {
   Serial.begin(115200);
-  pinMode(D0, OUTPUT);
+  pinMode(LED_BUILTIN, OUTPUT);
   pinMode(A0, INPUT);
 }
 
@@ -20,10 +20,10 @@ void loop() {
 
   Serial.println(brightness);
 
-  if(brightness < 500){
-    digitalWrite(D0, HIGH);
+  if(brightness < 800){
+    digitalWrite(LED_BUILTIN, HIGH);
   } else{
-    digitalWrite(D0, LOW);
+    digitalWrite(LED_BUILTIN, LOW);
   }
 }
 ```
@@ -58,4 +58,4 @@ To see the Serial values on the screen, all you have to do is click on the Seria
 
 ![Serial](./images/serial.png)
 
-[Main Menu](../readme.md) | [Next](./ex2.md)
+[Main Menu](../readme.md) | [Next](./temperature.md)

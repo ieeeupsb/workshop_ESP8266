@@ -43,4 +43,4 @@ Then restart your machine and you're set!
 
 Install the driver provided in [this page](https://www.wemos.cc/downloads) and restart.
 
-[Main Menu](../readme.md) | [Next](../content/statemachines.md)
+[Main Menu](../readme.md) | [Next](../content/microcontroller.md)

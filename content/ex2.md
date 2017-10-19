@@ -24,7 +24,7 @@ ESP8266WebServer server(80);					// Create a server on port 80
 Now fill the <code>setup()</code> routine with this code.
 
 ```c++
-pinMode(D0, OUTPUT);
+pinMode(LED_BUILTIN, OUTPUT);
 Serial.begin(115200);                             // Initialize the serial bus with a 115200 baud rate. This will allow us to send data back to the computer through the USB cable
 WiFi.begin(ssid, password);                       // Connect to the WiFi network set in the code above.
 Serial.println("");
@@ -70,11 +70,11 @@ This funtion runs when you access the webpage, therefore if you want to, you can
 Example:
 ```c++
 server.on("/on", [](){
-  digitalWrite(ledPin, LOW); //active low
+  digitalWrite(LED_BUILTIN, LOW); //active low
   server.send(200, "text/plain", "LED ON");
 });
 server.on("/off", [](){
-  digitalWrite(ledPin, HIGH); //active low
+  digitalWrite(LED_BUILTIN, HIGH); //active low
   server.send(200, "text/plain", "LED OFF");
 });
 ```

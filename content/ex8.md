@@ -4,9 +4,7 @@ To much times we are in our bed and the switch to turn on/off the lights is sooo
 
 ## The circuit
 
-We will use a LED to simulate the lights, connecting the LED to the D0 pin in our dev board. Using a resistor and jumper cables, the circuit should look something like this:
-
-![alt text](https://github.com/nuieee/ESP8266-Workshop-Exercises/blob/master/content/images/e782f7226577cb5059a5345e3de38d8e.png)
+We will use a LED to simulate the lights, connecting the LED to the D0 pin in our dev board. 
 
 ## The App
 First, install the Blynk app.
@@ -19,7 +17,7 @@ Then, create an account.
 
 Install the Blynk library. You can download it at https://github.com/blynkkk/blynk-library/releases/tag/v0.4.4. Download the <code>.zip</code> file in the end of the page. To install the library, in your Arduino IDE go to <code>Sketch -> Include library -> Add .zip library</code> and then give the path to your just downloaded library.
 
-Now, with all things configured, it’s time to get things done. Open the Blynk app and start a new project. Select **NodeMCU** as the hardware and **WiFi** as your connection type. Now select the plus at the top right corner. Select a button, and then click on it. In the button settings, select the pin you want to control. You can select if the logical level is HIGH when the button is pressed (as it is predefined) or LOW. For now we will just select the pin we wan't to control. It’s all done in the app, let’s start to coding our dev board.
+Now, with all things configured, it’s time to get things done. Open the Blynk app and start a new project. Select **Wemos D1 Mini** as the hardware and **WiFi** as your connection type. Now select the plus at the top right corner. Select a button, and then click on it. In the button settings, select the pin you want to control. You can select if the logical level is HIGH when the button is pressed (as it is predefined) or LOW. For now we will just select the pin we wan't to control. It’s all done in the app, let’s start to coding our dev board.
 
 ## Let's code the ESP8266
 Create a new sketch in the Arduino IDE. Include the following libraries.
