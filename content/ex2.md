@@ -58,7 +58,7 @@ server.on("/", [](){
 });	
 ```
 
-<code>server.on()</code> is used to create a webpage on the 'server' object we created earlier. In this context, "on" menas "when someone requests this page" and not "turn on".
+<code>server.on()</code> is used to create a webpage on the 'server' object we created earlier. In this context, "on" means "when someone requests this page" and not "turn on".
 
 The first argument ("/") sets the path to that page. In this case, root.
 
