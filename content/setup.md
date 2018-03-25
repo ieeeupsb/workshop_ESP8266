@@ -39,6 +39,6 @@ Then restart your machine and you're set!
 
 ## OSX specific instructions
 
-Install the driver provided in [this page](https://www.wemos.cc/downloads) and restart.
+Install the driver provided in [this page](https://wiki.wemos.cc/downloads) and restart.
 
 [Main Menu](../readme.md) | [Next](../content/microcontroller.md)
