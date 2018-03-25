@@ -38,4 +38,4 @@ Go ahead and make it print those values onto the **Serial Monitor** (remember to
 
 Ready? Let's move!
 
-[Main Menu](../readme.md) | [Next](./movement.md)
+[Main Menu](../readme.md) | [Next](./ex2.md)
