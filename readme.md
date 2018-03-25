@@ -13,9 +13,8 @@ If you find any typo or error in the documentation, you are more than welcome to
  1. [Hello World](./content/helloworld.md)
  2. [Getting readings from a photoresistor](./content/ex1.md)
  3. [Measure temperature](./content/temperature.md)
- 4. [Detecting movement](./content/movement.md)
- 5. [Displaying data in a webpage](./content/ex2.md)
- 6. [Recieving commands through HTTP GET and HTTP POST](./content/ex3.md)
+ 4. [Displaying data in a webpage](./content/ex2.md)
+ 5. [Recieving commands through HTTP GET and HTTP POST](./content/ex3.md)
 
 ## Quality of Life
  1. [Static IP and mDNS](./content/ex4.md)
