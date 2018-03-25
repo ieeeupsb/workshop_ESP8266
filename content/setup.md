@@ -1,7 +1,5 @@
 # Introduction - Setting Up
 
-Ready to start coding? Not so fast! First we'll configure our computer.
-
 Throughout this workshop we'll use the Arduino IDE to write and upload our code to the ESP8266 microcontroller (big word? We'll get there in a sec).
 
 To download the Arduino IDE go to [arduino.cc](http://arduino.cc)
