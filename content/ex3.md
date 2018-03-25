@@ -125,7 +125,7 @@ if(server.args()==1 && server.argName(0) == "BUILTIN"){
 
 Now we want some indicators, that change color according to the state of the LED (red for OFF, green for ON):
 ```Arduino
-String BIState = digitalRead(LED_BUILTIN)?"OFF":"ON"; // Active Low
+String BIState = digitalRead(LED_BUILTIN)?"ON":"OFF"; // Active high
 String BIColor = digitalRead(LED_BUILTIN)?"#cc2a18":"#2a7c0c";
 String OSState = digitalRead(LED_OUTSIDE)?"ON":"OFF";
 String OSColor = digitalRead(LED_OUTSIDE)?"#2a7c0c":"#cc2a18"; 
@@ -184,7 +184,7 @@ void setup(){
   });
 
   server.on("/", [](){
-    String BIState = digitalRead(LED_BUILTIN)?"OFF":"ONN"; // Active Low
+    String BIState = digitalRead(LED_BUILTIN)?"ON":"OFF"; // Active high
     String BIColor = digitalRead(LED_BUILTIN)?"#cc2a18":"#2a7c0c";
     String OSState = digitalRead(LED_OUTSIDE)?"ON":"OFF";
     String OSColor = digitalRead(LED_OUTSIDE)?"#2a7c0c":"#cc2a18"; 
