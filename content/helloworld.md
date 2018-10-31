@@ -47,4 +47,6 @@ Finally to make the blinking noticeable we've introduced a delay to make the chi
 
 ## Now, to check if you understood, try lighting up the external LED you just mounted!
 
+If you followed the steps correctly, it should have worked. Feel free to continue to the next step.
+
 [Main Menu](../readme.md) | [Next](./ex1.md)
