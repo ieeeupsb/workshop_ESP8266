@@ -29,3 +29,4 @@ If you find any typo or error in the documentation, you are more than welcome to
 ## Extras
  1. [Other ways of programing the ESP8266](./content/ex9.md)
  2. [Structure large and automated projects](./content/statemachines.md)
+ 3. [Kolban’s book on the ESP8266](http://neilkolban.com/tech/esp8266/)
