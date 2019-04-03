@@ -26,7 +26,7 @@ If you find any typo or error in the documentation, you are more than welcome to
  2. [Blynk App](./content/ex8.md)
  3. [Interrupts](./content/interrupts.md)
 
- # Challenge
+ ## Challenges
 
  1. [Dash Button](./content/dashbutton.md)
 
