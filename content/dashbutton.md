@@ -4,7 +4,7 @@
 This time your are on your own, for better or worse!
 What we propose is a device that has a button, and the ESP8266 and when the button is pressed an action of [If This Than That](https://ifttt.com/) is triggered.
 
-What about thinking on power saving options we have with ESP8266? For example, when the device is idle (the button is not pressed in a while) we can put the microcontroller in low power usage mode.
+What about thinking on power saving options we have with ESP8266? For example, when the device is idle (the button is not pressed for a while) we can put the microcontroller in low power usage mode.
 
 Go on! We'll let you search Google on your own to get the idea of what would be if you were doing a project on your own.
 
