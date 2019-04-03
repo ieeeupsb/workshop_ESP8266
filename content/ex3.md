@@ -1,4 +1,4 @@
-# Basics - Recieving commands through HTTP GET and HTTP POST
+# Basics - Receiving commands through HTTP GET and HTTP POST
 
 Displaying data in webpages is cool but we want more, we want automation! You can do this by passing some information in the page request.
 
