@@ -57,4 +57,4 @@ void loop()
 Now, flash the code and press play in the Blynk app. It should detect the ESP after some seconds and you are now controlling the LED!  
 Hop into https://blynk-examples.herokuapp.com/ to check more examples.
 
-[Main Menu](../readme.md) | [Next](./ex9.md)
+[Main Menu](../readme.md) | [Next](./interrupts.md)

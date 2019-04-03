@@ -1,4 +1,4 @@
-# Dash Button
+# Challenge - Dash Button
 ## Let's make a dash button that polls IFTTT and executes a useful task
 
 This time your are on your own, for better or worse!
@@ -19,3 +19,5 @@ Here are some initial searches:
 [How do I send data from IFTTT to ESP8266 module?](https://www.quora.com/How-do-I-send-data-from-IFTTT-to-ESP8266-module)
 
 [How to Run Your ESP8266 for Years on a Battery](https://openhomeautomation.net/esp8266-battery)
+
+[Main Menu](../README.md) | [Next](./ex9.md)

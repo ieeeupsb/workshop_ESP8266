@@ -56,5 +56,4 @@ void loop()
 ```
 Maybe you will want to stop using interrupts somewhere in your code. That can be easily done with the `detachInterrupt(interruptPin)` function. Don't forget: You can use the `detachInterrupt(digitalPinToInterrupt(2))` if you want to detach an interrupt to pin 2.
 
-[Main Menu](../README.md) | [Next](./ex9.md)
-
+[Main Menu](../README.md) | [Next](./dashbutton.md)

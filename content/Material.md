@@ -1,13 +1,16 @@
 # Introduction - Material
 
-During this workshop we'll be using the following:
+During this workshop we might have available the following:
 
 * Jumper cables
-* Photoresistor
+* Light Sensor
 * Temperature Sensor
 * Pressure Sensor
 * Movement Sensor
+* Light Bulbs
+* Infrared Sensor
 
+Ask us!
 
 ## Breadboards
 
