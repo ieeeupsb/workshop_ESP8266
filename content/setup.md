@@ -42,3 +42,23 @@ Then restart your machine and you're set!
 Install the driver provided in [this page](https://wiki.wemos.cc/downloads) and restart.
 
 [Main Menu](../readme.md) | [Next](../content/microcontroller.md)
+
+
+## Windows Driver instalation 
+
+Maybe, windows do not recognize the ESP driver automaticaly. In this case, you should instal it manualy. 
+
+If you plug the ESP board and you Arduino IDE do not show the comunication port, like on image below. 
+
+![Photoresistor](./images/img_0_COMM_not_show.PNG)
+
+First open you device manager. Then rigth click on USB and left click on update driver.
+
+![Photoresistor](./images/driver_instal_1.PNG)
+
+Then, select "Automaticaly search for drivers online". Wait the instalation finish.
+
+
+![Photoresistor](./images/Driver_install_2.PNG)
+
+Now, the COM port must apear on the "tools tab". 
