@@ -47,7 +47,7 @@ Finally to make the blinking noticeable we've introduced a delay to make the chi
 
 ### Before upload the code, remember to select the right board! 
 
-Searc for "LOLIN(WEMOS)D1 R2 & mini" and select it!
+Search for "LOLIN(WEMOS)D1 R2 & mini" and select it!
 
 ![rigth_boar](./images/set_up_board.png)
 
