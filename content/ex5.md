@@ -5,7 +5,7 @@ That's where the EEPROM comes in.
 
 > Fun Fact: The ESP doesn't actually have EEPROM, it simulates 512 bytes of it using the chip's flash memory, therefore you have fewer write cycles available before that part of memory dies (It is still a very large number of cycles, but it is advisable not to be constantly writting to it).
 
-> If you want to store files and not just variables read on: [SPIFFS](https://github.com/esp8266/Arduino/blob/master/doc/filesystem.md).
+> If you want to store files and not just variables read on: [LittleFS](https://github.com/littlefs-project/littlefs/README.md).
 
 Using the EEPROM is rather simple.
 
