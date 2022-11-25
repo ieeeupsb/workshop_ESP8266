@@ -40,6 +40,13 @@ This function is inside ```void loop() { ... }``` so it keeps repeating forever,
 </br>In this example, ```digitalWrite( ... )``` handles the value of the ```LED_BUILTIN``` pin.
 </br>Why digital? Because ```LED_BUILTIN``` is a digital pin, which means it can only be in one of two states HIGH (1) or LOW (0). Turned on, or turned off, as simple as that.
 
+### digitalRead(PIN_IDENTIFICATION)
+This function will give back the value of a digital input.
+
+### analogRead(PIN)
+
+Similar to what we do to change a value of a digital pin, this method is used to fetch data from a pin. This values vary between 0 and 1023.
+
 ### delay(TIME_IN_MILISECONDS)
 
 Finally to make the blinking noticeable we've introduced a delay to make the chip wait before executing the next instruction.
