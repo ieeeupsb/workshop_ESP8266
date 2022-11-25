@@ -48,6 +48,10 @@ void setup() {
   server.begin();                                   // Start the server
   Serial.println("HTTP server started");            // Signal that to the PC
 }
+
+void loop(){
+  server.handleClient();
+}
 ```
 
 Let's pay a little bit more attention to the webpage creation code.
