@@ -202,7 +202,6 @@ void setup() {
   digitalWrite(LED_BUILTIN, LOW);
   delay(500);
   digitalWrite(LED_BUILTIN, HIGH);
-  EEPROM.end();
 }
 
 void loop(){
