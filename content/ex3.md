@@ -30,39 +30,6 @@ String server.argName(int i)     // Returns the "name" of the argument number i.
 String server.arg(String name)   // Returns the value of the 'name' argument
 ```
 
-Example code:
-
-```Arduino
-server.on("/setpos", [](){
-  // Check if there is only one argument and if that argument is called "rate"
-  if(server.args()==1 && server.argName(0) == "rate"){
-
-    // Save the value in a String
-    String rate_s = server.arg("rate");
-
-    // Convert it into a Integer
-    int rate_i = rate_s.toInt();
-
-    // Check if the value passed is between 0-255
-    // If rate_s contained a char, the returned value of 'rate_s.toInt()'
-    //     would be '0', which is a valid input, therefore we need to
-    //     convert rate_i back to a String and compare it to rate_s
-    if(rate_i >= 0 && rate_i <= 255 && String(rate_i) == rate_s){
-
-      // If so write that value to the pin
-      analogWrite(pin, rate_i);
-
-      // Send a response to the client, in this case, your PC
-      server.send(200, "text/html", "<p>Rate set to " + rate_s + "</p>");
-    }
-    else
-      server.send(200, "text/html", "<p>Error with arg value</p>");
-  }
-  else
-    server.send(200, "text/html", "<p>Invalid request</p>");
-});
-```
-
 To force a page to only recieve requests of a certain type use:
 
 ```Arduino
@@ -141,45 +108,84 @@ This is our "final code" for this example. Try uploading it to your ESP8266, and
 #include <WiFiClient.h>
 #include <ESP8266WebServer.h>
 
-#define LED_OUTSIDE D1
+#define LED_OUTSIDE 15
 
-const char* ssid = "**********";		// DON'T FORGET TO CHANGE THIS!
-const char* password = "*******";
+//Credentials of the WiFi you're connecting to
+#define WIFI_NAME "************"
+#define WIFI_PASSWORD "**********"
 
-ESP8266WebServer server(80);                    // Create a server on port 80
+ESP8266WebServer server(80);    //Open server on port 80 - HTTP port
+bool built_value=false;
+bool outside_value=false;
 
-void setup(){
-  
+void setup() {
   pinMode(LED_BUILTIN, OUTPUT);
   pinMode(LED_OUTSIDE, OUTPUT);
-  Serial.begin(115200);                             // Initialize the serial bus with a 115200 baud rate. This will allow us to send data back to the computer through the USB cable
-  WiFi.begin(ssid, password);                       // Connect to the WiFi network set in the code above.
+
+  Serial.begin(115200);              // Initialize the serial bus with a 115200 baud rate. This will allow us to send data back to the computer through the USB cable
+  WiFi.begin(WIFI_NAME, WIFI_PASSWORD);                       // Connect to the WiFi network set in the code above.
   Serial.println("");
 
   while (WiFi.status() != WL_CONNECTED){            // Wait for the connection to be established.
     delay(500);
     Serial.print(".");                              // Send a '.' through the serial bus while we wait.
   }
-    
+
   Serial.println("");                               // Send a '\n'
-                             
   Serial.print("Connected to ");                    // 
-  Serial.println(ssid);                             // Print the network the board connected to 
+  Serial.println(WIFI_NAME);                             // Print the network the board connected to 
   Serial.print("IP address: ");                     //
   Serial.println(WiFi.localIP());                   // and the IP address it recieved from the DHCP server
-    
 
+//server.method()                  // Returns HTTP_GET or HTTP_POST
+//int server.args()                // Returns the number of arguments in the request
+//String server.argName(int i)     // Returns the "name" of the argument number i.
+//String server.arg(String name)   // Returns the value of the 'name' argument
 
-  server.on("/switch", [](){
-    if(server.args()==1 && server.argName(0) == "BUILTIN"){
-      digitalWrite(LED_BUILTIN,!digitalRead(LED_BUILTIN));
-    } else if(server.args()==1 && server.argName(0) == "OUTSIDE"){
-      digitalWrite(LED_OUTSIDE,!digitalRead(LED_OUTSIDE));
+//Method seems to be always POST
+ server.on("/switch", [](){
+  String BIState;
+  String BIColor;
+  String OSState;
+  String OSColor;
+  Serial.print("Server args and name: ");
+  Serial.print(server.args());
+  Serial.println(server.argName(0));
+  Serial.println(server.argName(1));
+
+    if(server.args()==2 && server.argName(0) == "BUILTIN"){
+      Serial.println("inside BUILTIN /switch");
+      built_value=!built_value;
+      digitalWrite(LED_BUILTIN,!built_value);
+    } else if(server.args()==2 && server.argName(0) == "OUTSIDE"){
+      Serial.println("inside OUTSIDE /switch");
+      outside_value=!outside_value;
+      digitalWrite(LED_OUTSIDE,outside_value);
     }
-      String BIState = digitalRead(LED_BUILTIN)?"ON":"OFF"; // Active high
-      String BIColor = digitalRead(LED_BUILTIN)?"#cc2a18":"#2a7c0c";
-      String OSState = digitalRead(LED_OUTSIDE)?"ON":"OFF";
-      String OSColor = digitalRead(LED_OUTSIDE)?"#2a7c0c":"#cc2a18"; 
+    
+    /*
+      Serial.println("inside /switch html define");
+      if(server.method()==HTTP_GET){
+        Serial.println("GET REQUEST"); 
+      }else if(server.method()==HTTP_POST){
+        Serial.println("POST REQUEST"); 
+      }else {Serial.println("Something other than POST or GET");}
+       */
+      if(built_value){
+        BIState = "ON"; // Active high
+        BIColor = "#2a7c0c";
+      }else{        
+        BIState = "OFF"; // Active high
+        BIColor = "#cc2a18";
+      }
+
+      if(outside_value){
+        OSState = "ON"; // Active high
+        OSColor = "#2a7c0c";
+      }else{        
+        OSState = "OFF"; // Active high
+        OSColor = "#cc2a18";
+      }
       server.send(200, "text/html", "<html> <body style=\"background: rgb(57, 181, 255); text-align: center;\"> <div style=\"margin-top: 100px;position: relative;\"> <form action=\"/switch\" method=\"POST\"> <button type=\"submit\" name=\"BUILTIN\" value=\"true\" style=\"font-size: 30px; border: none; border-radius: 15px; padding: 15px 32px; color: white; background-color: rgb(23, 57, 86); box-shadow: 5px 5px 5px rgb(43, 131, 183);\">Switch built-in led</button> </br><button type=\"submit\" name=\"OUTSIDE\" value=\"true\" style=\"font-size: 30px; border: none; border-radius: 15px; padding: 15px 32px; color: white; background-color: rgb(23, 57, 86); box-shadow: 5px 5px 5px rgb(43, 131, 183); margin-top: 30px;\">Switch outside led</button> </form> </div> <div style=\"margin-top: 100px; position: relative;\"> <button style=\"font-size: 40px;border: none;border-radius: 20px;padding: 15px 32px;color: white;background-color: " + BIColor + ";\">BUILT-IN " + BIState + "</button> </br><button style=\"margin-top: 20px;font-size: 40px;border: none;border-radius: 20px;padding: 15px 32px;color: white;background-color:"+ OSColor +";\">OUTSIDE "+ OSState +"</button> </div> </body> </html>");
   });
 
@@ -196,11 +202,10 @@ void setup(){
   digitalWrite(LED_BUILTIN, LOW);
   delay(500);
   digitalWrite(LED_BUILTIN, HIGH);
+  EEPROM.end();
 }
 
-
 void loop(){
-  // The code inside these brackets will run forever until the power is unplugged from the board.
   server.handleClient();
   delay(100);
 }
