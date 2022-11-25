@@ -73,11 +73,11 @@ This funtion runs when you access the webpage, therefore if you want to, you can
 Example:
 ```c++
 server.on("/on", [](){
-  digitalWrite(LED_BUILTIN, HIGH); //active high
+  digitalWrite(LED_BUILTIN, LOW); //active high
   server.send(200, "text/plain", "LED ON");
 });
 server.on("/off", [](){
-  digitalWrite(LED_BUILTIN, LOW); //active high
+  digitalWrite(LED_BUILTIN, HIGH); //active high
   server.send(200, "text/plain", "LED OFF");
 });
 ```
