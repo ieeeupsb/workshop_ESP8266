@@ -43,7 +43,7 @@ This function is inside ```void loop() { ... }``` so it keeps repeating forever,
 ### delay(TIME_IN_MILISECONDS)
 
 Finally to make the blinking noticeable we've introduced a delay to make the chip wait before executing the next instruction.
-</br>This function is useful when dealing with any microcontroller, as you might see later on.
+</br>This function is useful when dealing with any microcontroller, as you might see later on. However, it isn't the best way to do it, as it stays static in one place and won't detect inputs!
 
 ### Before upload the code, remember to select the right board! 
 
