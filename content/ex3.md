@@ -82,20 +82,33 @@ This page has two buttons, one to **switch the built-in LED** and another one to
 
 Now we need to actually switch the LEDs on or off... This is how we'll do it:
 ```Arduino
-if(server.args()==1 && server.argName(0) == "BUILTIN"){
-  digitalWrite(LED_BUILTIN,!digitalRead(LED_BUILTIN));
-} else if(server.args()==1 && server.argName(0) == "OUTSIDE"){
-  digitalWrite(LED_OUTSIDE,!digitalRead(LED_OUTSIDE));
-}
+if(server.args()==2 && server.argName(0) == "BUILTIN"){
+      built_value=!built_value;
+      digitalWrite(LED_BUILTIN,!built_value);
+    } else if(server.args()==2 && server.argName(0) == "OUTSIDE"){
+      outside_value=!outside_value;
+      digitalWrite(LED_OUTSIDE,outside_value);
+    }
 ```
 > The exclamation mark (**!**) means "**not**" or "**negative**" when programming. So we're just turning the LED to the opposite state it is currently in. 
 
 Now we want some indicators, that change color according to the state of the LED (red for OFF, green for ON):
 ```Arduino
-String BIState = digitalRead(LED_BUILTIN)?"ON":"OFF"; // Active high
-String BIColor = digitalRead(LED_BUILTIN)?"#cc2a18":"#2a7c0c";
-String OSState = digitalRead(LED_OUTSIDE)?"ON":"OFF";
-String OSColor = digitalRead(LED_OUTSIDE)?"#2a7c0c":"#cc2a18"; 
+if(built_value){
+        BIState = "ON"; // Active high
+        BIColor = "#2a7c0c";
+      }else{        
+        BIState = "OFF"; // Active high
+        BIColor = "#cc2a18";
+      }
+
+      if(outside_value){
+        OSState = "ON"; // Active high
+        OSColor = "#2a7c0c";
+      }else{        
+        OSState = "OFF"; // Active high
+        OSColor = "#cc2a18";
+      }
 ```
 >For now this might be hard to understand, particularly if never used HTML, but there is a lot of documentation online for you to get started. Just look for "HTML buttons", "HTML color", "HTML forms", ...
 
