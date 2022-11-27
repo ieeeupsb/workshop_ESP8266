@@ -51,7 +51,7 @@ The electrical resistance of a resistor is measured in Ohms. The symbol for an O
 
 As SI units go, larger or smaller values of Ohms can be matched with a prefix like kilo-, mega-, or giga-, to make large values easier to read. It’s very common to see resistors in the kilohm (kΩ) and megaohm (MΩ) range (much less common to see miliohm (mΩ) resistors). For example, a 4,700Ω resistor is equivalent to a 4.7kΩ resistor (that can also be represented as 4K7Ω), and a 5,600,000Ω resistor can be written as 5,600kΩ, 5.6MΩ or even 5M6Ω.
 
-##LEDs
+## LEDs
 
 ![LEDs](https://github.com/nuieee/ESP8266-Workshop-Exercises/blob/ws_v2/content/images/LEDrainbow.jpg)
 
