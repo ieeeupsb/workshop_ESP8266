@@ -19,8 +19,8 @@ If you find any typo or error in the documentation, you are more than welcome to
 
 ## Quality of Life
  1. [AP mode and Captive portals](./content/ex6.md)
- 2. [EEPROM](./content/ex5.md)
- 3. [Static IP and mDNS](./content/ex4.md)
+ 2. [Static IP and mDNS](./content/ex4.md)
+ 3. [EEPROM](./content/ex5.md)
 
 ## Advanced-ish Stuff
  1. [OTA updates](./content/ex7.md)
