@@ -18,8 +18,8 @@ If you find any typo or error in the documentation, you are more than welcome to
  6. [Scraping from a WebSite 101](./content/ex10.md)
 
 ## Quality of Life
- 1. [AP mode and Captive portals](./content/ex6.md)
- 2. [Static IP and mDNS](./content/ex4.md)
+ 1. [Static IP and mDNS](./content/ex4.md)
+ 2. [AP mode and Captive portals](./content/ex6.md)
  3. [EEPROM](./content/ex5.md)
 
 ## Advanced-ish Stuff
