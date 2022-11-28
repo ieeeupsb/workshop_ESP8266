@@ -26,4 +26,4 @@ As simple as that.
 > Try writting a simple sketch that saves the WiFi credentials into the EEPROM, so you won't have to upload hardcoded credentials in your projects.
 > The SSID max size is 32 bytes (characters) and the PASSWORD max size is 64 bytes.
 
-[Main Menu](../readme.md) | [Next](./ex6.md)
+[Main Menu](../readme.md) | [Next](./ex7.md)

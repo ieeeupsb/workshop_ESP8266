@@ -51,40 +51,12 @@ The electrical resistance of a resistor is measured in Ohms. The symbol for an O
 
 As SI units go, larger or smaller values of Ohms can be matched with a prefix like kilo-, mega-, or giga-, to make large values easier to read. It’s very common to see resistors in the kilohm (kΩ) and megaohm (MΩ) range (much less common to see miliohm (mΩ) resistors). For example, a 4,700Ω resistor is equivalent to a 4.7kΩ resistor (that can also be represented as 4K7Ω), and a 5,600,000Ω resistor can be written as 5,600kΩ, 5.6MΩ or even 5M6Ω.
 
-## Photoresistor
+## LEDs
 
-![Photoresistor](https://github.com/nuieee/ESP8266-Workshop-Exercises/blob/ws_v2/content/images/Photoresistor.jpg)
+![LEDs](https://github.com/nuieee/ESP8266-Workshop-Exercises/blob/ws_v2/content/images/LEDrainbow.jpg)
 
-### What is a photoresistor?
+LED stands for Light Emitting Diode and a Diode is a electrical component that only allows current to flow from one side to the other, not the opposite. It is an awesome component when proggraming microcontrolers to give information to the user and as a debug tool. If you want to use a standard breadboard LED, you will need to add a resistor in Series with it.
 
-A photoresistors are also known as light dependent resistors or LDRs and are often used in circuits where it is necessary to detect the presence or the level of light. Although other devices such as photodiodes or photo-transistor can also be used, LDRs or photoresistors are a particularly convenient electronics component to use. They provide large change in resistance for changes in light level.
 
-In view of their low cost, ease of manufacture, and ease of use, LDRs have been used in a variety of different applications. In the past LDRs were used in photographic light meters, although they are still used nowadays. When light falls it will increase its electrical resistance giving a nice difference in magnitude so they are very precise. The sensitivity of light dependent resistors or photoresistors also varies with the wavelength of the incident light.
-
-LDRs are made from semiconductor materials to enable them to have their light sensitive properties. Many materials can be used, but one popular material for these photoresistors is cadmium sulphide, CdS. (again, no need to uderstand this last paragraph throughly)
-
-## DHT11 Temperature Sensor
-
-Like the name suggests, this device is able to measure the ambient temperature.
-
-![DHT11](images/DHT11.jpg)
-
-Keep in mind that like all sensors it doesn't give you exactly and trustworthly the real value. Some sensors give you very accurate values that you can trust but it is never exactly the real value. With that being said this sensor is not all that acurate as you will see, so dont strange the odd values.
-
-When analysing sensors it is a good idea to read some of these accuracy and other parameters on its datasheet. For the most times, they are easily found using Google. But we'll spare you that work and just hand it to you.
-
-<a href="https://akizukidenshi.com/download/ds/aosong/DHT11.pdf">DHT11 Datasheet</a>
-
-## BMP280 Pressure Sensor
-
-BMP280 is a very good sensor from Bosch and it mesures pressure very accuratly.
-
-![BMP280](images/bmp280.jpg)
-
-## PIR Movement Sensor
-
-This sensor can detect changes in radiation to detect movement and it is widely used in automatic lights, like in bathrooms and some public places.
-
-![PIR Movement Sensor](images/pir.jpg)
 
 [Main Menu](../readme.md) | [Next](./helloworld.md)

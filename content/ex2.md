@@ -48,6 +48,10 @@ void setup() {
   server.begin();                                   // Start the server
   Serial.println("HTTP server started");            // Signal that to the PC
 }
+
+void loop(){
+  server.handleClient();
+}
 ```
 
 Let's pay a little bit more attention to the webpage creation code.
@@ -73,11 +77,11 @@ This funtion runs when you access the webpage, therefore if you want to, you can
 Example:
 ```c++
 server.on("/on", [](){
-  digitalWrite(LED_BUILTIN, HIGH); //active high
+  digitalWrite(LED_BUILTIN, LOW); //active HIGH - digitalWrite is only working backwards when creating a server, weird
   server.send(200, "text/plain", "LED ON");
 });
 server.on("/off", [](){
-  digitalWrite(LED_BUILTIN, LOW); //active high
+  digitalWrite(LED_BUILTIN, HIGH); //active LOW - digitalWrite is only working backwards when creating a server, weird
   server.send(200, "text/plain", "LED OFF");
 });
 ```
